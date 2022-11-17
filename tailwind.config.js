@@ -1,8 +1,17 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
-  content: ["index.html", "./src/**/*.{js,jsx,ts,tsx,vue,html}"],
+  content : ['./*.html'],
+  safelist : [
+    'translate-y-1.5',
+    '-translate-y-1',
+    'rotate-45',
+    '-rotate-45',
+    '!bg-yellow-900',
+    'border-yellow-300'
+  ],
   presets: [],
-  darkMode: "class", // or 'class'
+  darkMode: 'class', // or 'media' or 'class'
   theme: {
     screens: {
       sm: "640px",
@@ -15,23 +24,28 @@ module.exports = {
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
-      primary: "#0ec8fe",
-      secondary: "#01FCE8",
-      dark: "#15191B",
+      primary: "#1565c0",
+      primaryLight : "#42a5f5",
+      primaryDark : "#47126b",
+      secondary: "#7161ef",
+      secondaryLight : "#957fef",
+      dark: "#0A101E",
+      darker : "#090E1A",
       black: colors.black,
       white: colors.white,
       slate: colors.slate,
-      gray: {
-        50: "#FBFBFB",
-        100: "#ECEFF1",
-        200: "#F0F0F0",
-        300: "#BAC8CC",
-        400: "#767E81",
-        500: "#64777C",
-        600: "#4A5457",
-        700: "#2B3537",
-        800: "#1B2022",
-        900: "#15191B",
+      gray: colors.slate,
+      blue : {
+        50:"#F7FBFF",
+        100:"#CEE6FC",
+        200:"#A5D2F9",
+        300:"#7CBDF6",
+        400:"#52A8F2",
+        500:"#2994EF",
+        600 : "#007FEC",
+        700 : "#0065BD",
+        800 : "#004C8D",
+        900 : "#00325E"
       },
       zinc: colors.zinc,
       neutral: colors.neutral,
@@ -46,7 +60,6 @@ module.exports = {
       teal: colors.teal,
       cyan: colors.cyan,
       sky: colors.sky,
-      blue: colors.blue,
       indigo: colors.indigo,
       violet: colors.violet,
       purple: colors.purple,
@@ -977,4 +990,4 @@ module.exports = {
     "disabled",
   ],
   plugins: [],
-};
+}
