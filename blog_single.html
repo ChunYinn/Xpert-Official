@@ -12,7 +12,7 @@
   <body class="bg-white min-h-screen selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
     <header>
         <input type="checkbox" name="hbr" id="hbr" class="hbr peer" hidden aria-hidden="true">
-        <nav class="fixed dark:border-b dark:border-gray-700/30 inset-x-0 z-20 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur navbar peer-checked:navbar-active md:bg-transparent">
+        <nav class="fixed border-b border-gray-100 dark:border-gray-700/30 inset-x-0 z-20 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur navbar peer-checked:navbar-active md:bg-transparent">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
                 <div class="flex flex-wrap items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative">
                     <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav" class="hidden peer">
@@ -121,193 +121,150 @@
         </nav>
     </header>
 
-    <div class="pt-36 sm:pt-40 md:pt-56 overflow-x-hidden">
+    <div class="pt-36 sm:pt-40 md:pt-56 border-b border-gray-100 dark:border-gray-800 overflow-x-hidden">
         <div class="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
-            <div class="relative z-10 text-center md:w-5/6 lg:w-4/6 md:mx-auto">
-                <h1 class="relative text-4xl sm:text-5xl md:text-6xl text-center font-bold text-gray-900 dark:text-white">
-                    Working with technology leading 
-                    <span class="relative ">
-                        <svg class="absolute -bottom-1 opacity-50 inset-x-0 w-full" xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 260 15.6">
-                            <style>
-                              .st0{
-                                @apply fill-secondaryLight
-                                }
-                            </style>
-                            <path class="st0" d="M206.8 7.3l-.1.3c.1-.2.2-.3.1-.3zM234.7 10h-.1c-.2.4-.1.3.1 0zM54.8 4.2l-.6-.4c.2.4.4.5.6.4zM17.1 5.1zM34.5 9.6l.1.3c0-.2 0-.3-.1-.3zM22.4 10.8c-.3-.1-.7-.1-1-.1.2.1.7.1 1 .1zM17.5 5c-.1.1-.2.1-.4.2.2-.1.3-.2.4-.2zM52.7 9.8l.5.9c-.1-.3-.3-.6-.5-.9zM19.5 11.6c-.2-.2-.4-.2-.6-.3 0 .2.3.3.6.3zM120.9 11.4c-.1.1-.2.2-.2.3.3-.1.3-.2.2-.3zM80.9 10.4h-.1s.1.1.2.1l-.1-.1zM92.6 10.4l-.2.2c.2-.1.2-.1.2-.2zM72.1 11.3c-.1.1-.3.2-.4.3l.4-.3z"/>
-                            <path class="st0" d="M260 6c-1-.6-4.7-1.2-5.8.3-.2-.1.1-.3.2-.4-.9.2-2.2.1-3.6 0s-2.9-.2-4.2 0c-1 1.5-3.9-.6-4.8 1.4l.5-.4c.9.5-1.2 1.4-1.5 1.9-.8-1.2-.1-1-1-2l1.1.4-.3-1c-3.1 2.8-6.2-.9-8.2 1.1.1-.1.1-.3.2-.4-1.4-.5-2.3.8-3.3 1.2-.1-.5.6-.9 1.1-1.3-2.4-.3-6.4 1.2-9 .4-.9.7.4.9-.6 1.5-.8-.2-1.4-.7-.4-1.1-2.3-1.2-7.6 1-11.1-.2-1.8.8-.7 1.1-3.5 1.6.7-.5-.7-1.7 1-1.7l.2-.5c-2.8-.1-6.6-.3-8.1 1.2-.1-1.1-.5-.2-1.6-.8-.4.1 0 .2.2.2-1 .9-1.6-.1-2.3.1l.3-.2-2 .7c-.3-.2-.8-.4-.9-.7v.8c-1.1 0-.5-1-1.9-.8l.3.6c-.9-.4-2.2.4-2.4-.5 0-.2.1-.1.4-.1-1.3-1.2-3.5.3-5.1-.3l.4 1.3c-1.6.4-1-.3-.9-.7-1.1 0-1.3-.4-2.7-.6-.7.3-.4.5-.6.8l-1.5-.4 1-.7c-2.3 1.8-5.6-.4-7.2 1.2-.8-.4.8-.7.3-1-2.6-.9-6 1-8.2 0-3.6-1-7.8-.4-11.8-1.1l.1.3-2.9-.4c-.8.7-2.7.3-4 1.1.1-.3-.1-.7.2-.9-1.2.1-2.6.4-3.3-.1l.4-.3c-2.7-.3-6.4-.5-7.9.1-.9 0-.9-.6-1.1-1-1.6-.1-2.6.2-3.9.7-.3-.2-.7-.3-1-.6l-.6.8c-.6-.1-.1-.7-.6-.9-2.5.9-5.3-.1-7-.1l.2.4c-.7.3-2.1-.3-1.2-.7-3.4-.6-5.1 1.2-9.6.8-.6-1.5-4.1.3-4.8-1.4-1.9.4-3.2-.3-4.5.6 0-.2-.2-.2.1-.3-.8-.6-3.3-.2-5.3.2l-.1-.5c-.9 1.2-4.2.9-4.9 2-.2-.2.4-.5.7-.7-1-1.1-1.8.5-3.1.2.1-.3-.3-.6 0-.8-4.4-1.2-10.6.7-16.3-.1-1.6 0 .6 1.2-1.5 1.1-.6-.6 1-1.1-.3-1.4-.9.7-1.3.5-2.6.5.2-.4 0-.6.9-.9-.7-.5-3.1.9-4.5 0 .1.3-.2.5-.5.7-2.1 1-4.9-.9-5.1-.4 0 0-.7.2-.1.3-.8 0-1.9-.2-1.7-.7-.4.3-.8.8-1.4.8l.3-.6c-.4.1-.8.5-1.1.6l.6.4c-.9-.5-2.6.8-2.6-.4h.3l-1.7-.5c-.7.5-1.3 1-2.5.9-.5-1.3-2.9-.2-4.3-.3l.1-.4c-1.1.6-4 .4-3.5.6-1.1 0-2.6-.2-2-.6-.8.1-2.7.1-3.2.9l-1.8-1c-1 1.6-3.6-.5-3.6 1.2-1-.2-.8-.6-1.5-.9-1.4.9-2.8.8-4.2.7v-.2c-1.4-.1-3.1.8-5.1 1l-.5-1.2c-1 .2-1.3 1.2-2.3 1-.2-.2 0-.3.2-.3-1 .3-2.3.1-3.1-.2-1.5 1-2.7.7-3.9 1.8-1.3-1 1.7-.6.6-1.6-2.2-.4-4.4.4-6.7 1.1-.2-.2 0-.4.1-.7 0 0-1.2.9-2.2 1.8C.9 8.3 0 9.4.5 10c-.5.9-1.2 1.4.9 2 .6-.5 2.5-1.3 2.9-.4l.1-.9c2.6-.6.4 1.8 3.6 1.6l-.7-.3c.6-.1 1.1-.7 1.8-.5.2.2-.2.4-.5.6.9-.5 1.7-.9 2.6-1.4.1.5.1.8-.4 1.2 2.5-.2-.6-1.6 2.4-1.4.6.4-.2.6-.5.9 1.4.7 2.3-.1 3.8-.6.1.8-.9.7.3 1.2-.3-.4-.5-1.1.5-1.2-.4.8.7.4 1.6.5-.2-.3-.1-.6.2-.8.4-.1.8.1 1.4.1l-1.1-.7c1.5-.8 2.4.3 3.6.6-.1.1-.3.3-.5.3 1.2.3 2.5.9 4.1.1l-.3.1c2.9-.9-1-1.3 2.4-2.2 1.1.1-.4 2.6 2.1 1.6-1.3-.6 1.6-1.7 3.1-2L32.4 10c.6 0 1.6-.5 2-.3l-.1-.3c-.2-1.3 1.9.1 3-.7-1.3 1.8-1.4 1.5-1.6 3.2 1-1 2.2-1.9 4.1-1.8l-1.5 1.4c2.5.2 5.5-1.9 7.6-3-.5 1 .3 1.4-.6 2.2l2.4-.3-.7 1.1c1-1.2 2.1-.4 1.9-1.9-.3.2-.2.4-.7.3.1-.4.5-1.4 1.7-1.3.9.3-.5.6-.2 1 .8-.6.9.3 1.7-.1l-.8-.6c.6-.9 1.4-.1 2.2-.5-1 .4-.7.9-.3 1.4l-.1-.1c.8-.1 1.6-.7 2-.2l-.5 1.2.9-.9c.3.1.6.6 0 .8 2.8.7-.1-2.5 3.6-1.5 0 .5-.4.8-1.4.5-.2.7.1 1.1 1.1 1.4v.1c1.9 0 4.4 0 5.6-.8.4.3 0 .6-.4.9 2.1.4 2.8-.7 5 .1l-1-.4c1.4-.6 4-.8 5.3.1l-.4.3c1.3-.7 3.5.6 4 0-.6-.4 0-.6-.8-1l3.4-.7.2 1.2 1.8-.4c-.4-.5 2.4.4 2.5-.7 1 .4-.4.9-.8 1.4 1-.3 1.1.2 2.1-.5l1 1.1 2.6-.7c-.1.1 0 .2-.1.3 1.2-.9 3.1.6 4.6-.9-.1.1-.1.1-.1.2.9-.8 2.9-.2 3.7 0 1.4-.2.6-1 .6-1.4 3.9.4 2.7.3 6-.9 2 1.4-2.4 2.1.1 3 .4-.6 2.1-1.1 4.1-1.3 1.8.5 4.8.9 6.5 1.9l-.2-.9 2.6-.4-1.5 1.2c.4-.3 1.7-.8 2.6-1.2 2.7-.7 1.4 1.9 3.5.7.1.1.1.2.2.3.7-.6 2.4-.3 4.4-.5l-.7 1.1-1.3-.3c.7 1.1 2.1-.1 3.4 0 1.3-.3.7-1.3 1.4-1.6.5.1 1.2-.2 1.6.1 1.1.4.1 1.3-.3 1.8 1-1.1 1.4-.9 3.6-1.3.1.5-.1.8-.4.9.5-.1.9-.3 1.2-.8l.7.7c2.5 1 2.6-2 5.6-1.5-.8.6 2.6 0 3.5.7-1.1.1.4 1.6-.2 2.3 2.4.5 1-1.3 3-1.4l-.9 1.3c1.9-.5.5-.7 2.4-1.1-.5.4.8.4-.3.8 2.5.2 1.9.1 4.1.3l.2-1.3c.7-.1 1 .5 1.2.7-.3 0-.8-.1-.7.1.8 1.2 1.4-.6 2.4.5-.2-.4-.5-1 .4-1.1-.3.8 1.4.8 1.4 1.2-.6-.6 2-.2 2.1-1 1 .7-.4.6-.4 1.1.9-1 3.7 0 4.6-.6 0 .1.1.1.1.2 1.2-.6 3-.7 5.3-1.5l-.8.7c2.2.4 1.4-1.5 3.3-1.5-.4 1.1 3.1 0 2.2 1.2 1.1-.6 2.3-.8 3.1-1.7 1 .6-2.1 1.4-.6 1.8l1.6-.5.3.6c.1-.4 1.5-.4 1.4-.8.2.7.9 1.2.8 1.8 1-.2 2.4.5 3.3-.1l.1.3c1-1.3 3.1-.2 3.6-1.5l.6.7c1.5-.1 1.3-1.5 2-1.8.6 0 1.4-.2 2 0-2 .8 1 1.1 1.4 1.6.8 0 3.1 0 3.7-.7-1 .7-.4 1.2-2.1 1.3.9 1.3 2.6-.2 4.5-.1v.6c2.7-.4 2.8-1.5 4-2.5.3.8.1 1-.7 1.7 1.8.5 4.7-.1 6.7 0 .6.5.2.9-.5 1.1 2.1-.6 4.7.1 6-1.2-.5.5.9.3 1.6.6 0-.3.1-.6.2-.6 1.3-.6 4.1-1.1 5.6-.7l-.5.4c1.7.1 3-.5 4.3-.9 1.3-.4 2.6-.8 4.5-.4.7.3-.7 1.1.7 1 .7-.5.4-1.5 2.2-1.3l-.1.9 1.2-.9c-.7-.7-2.6-.4-1.3-1.2 1.6.8 1.3-.9 3.3 0-.4.1-1 .8-1.3 1.2 2 .4 3.4.1 4.8-.1 1.4-.3 2.8-.6 4.9-.2 2-.8 4.6-1.2 5.9-1.9 0 .9 0 1.7-.8 2.4 1.8 0 2.4-2.1 3.7-.9.7-1.3 4.7-1.2 5-3l2-.8z"/>
-                            <path class="st0" d="M58.1 11.1c-1 0-1.9 0-2.3.2.2.2 2.3.6 2.3-.2zM208.2 13.3c-.1 0-.3.1-.4.1.1 0 .3 0 .4-.1zM216.3 12.9c-.1-.1-.2-.2-.4-.3 0 .3.1.5.4.3zM132.6 11.5zM178.5 13.7c.7-.4 1-.7 1-1-.4.1-.7.3-1 1zM163 12.6c-.1.1-.2.1-.3.2.3-.1.3-.2.3-.2zM130.2 12c.7-.4 1.6-.3 2.4-.5-.7.2-1.9-.3-2.4.5zM226.1 11.4l-.7.6.8-.4zM218.6 12c-.3-.1-1.7.3-1.3.6.4-.3.9-.5 1.3-.6zM189.6 11.4l-.3.6.7-.5z"/>
-                        </svg>
-                        <span class="px-2 relative bg-clip-text text-transparent bg-gradient-to-r from-secondaryLight to-secondary">companies.</span>
-                    </span>
+            <div class="z-10">
+                <h1 class="relative text-4xl text-center sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white">
+                    Supernova's Seed Round and Our New Design Token Manager
                 </h1>
-                <p class="mt-6 text-gray-700 dark:text-gray-300">Saepe nulla ab nobis itaque corporis fuga illo doloribus sequi esse aspernatur impedit nihil quisquam, voluptates placeat architecto adipisci id cum enim.</p>
+                <div class="mt-20 flex gap-6 flex-wrap items-center justify-center">
+                    <div class="h-12 w-12 flex rounded-xl border border-primary/20 bg-white dark:border-gray-700 dark:bg-gray-800 shadow-md shadow-primary/10">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 m-auto text-primary dark:text-blue-300">
+                            <path class="text-primaryLight" fill-rule="evenodd" d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a49.488 49.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+                            <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
+                        </svg>                                 
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <img class="w-12 h-12 rounded-full" src="https://avatars.githubusercontent.com/u/31113941?v=4" alt="" width="" height="" loading="lazy">
+                        <div>
+                          <h6 class="leading-0 text-lg font-medium text-gray-700 dark:text-white">Bernard Ngandu</h6>
+                          <p class="-mt-0.5 leading-0 text-sm text-gray-500 dark:text-gray-400">Oct.10.2022</p>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            
-            <div class="py-16">
-                <div class=" text-gray-600 dark:text-gray-300">
-                    <div class="mb-12 overflow-hidden relative group lg:pr-0 pr-8 pl-8 pt-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
-                        <div class="lg:flex items-end gap-6">
-                            <div class="sm:flex gap-6 lg:block lg:w-1/3 pb-6 sm:pb-2 lg:pb-8 relative">
-                                <div class="sm:w-1/3 lg:w-auto sm:-mr-0 -mx-6 -mt-6 p-10 flex rounded-2xl lg:mx-0 lg:mt-0 lg:rounded-lg border border-dashed dark:border-gray-700 bg-gray-100 dark:bg-gray-800">
-                                    <img class="w-auto m-auto h-12 dark:grayscale dark:invert dark:contrast-100" src="./images/clients/airbnb.svg" loading="lazy" alt="airbnb"/>
-                                </div>
-                                <div class="sm:pb-6 lg:pb-0 sm:w-2/3 lg:w-auto mt-6 sm:mt-0 lg:mt-6">
-                                    <p class="mb-6 text-gray-600 dark:text-gray-400">Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
-                                    <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
-                                        <p class="mt-2 mb-8 text-gray-600 dark:text-gray-300">Veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
-                                        <div class="flex gap-4">
-                                            <img class="w-12 h-12 rounded-full" src="https://pbs.twimg.com/profile_images/1372441824560771075/DTcuXT0Z_400x400.jpg" alt="" width="" height="" loading="lazy">
-                                            <div>
-                                                <h6 class="text-lg font-medium text-gray-700 dark:text-white">Rodrigo Aguilar</h6>
-                                                <p class="text-sm text-gray-500">Creator of Tailwind Awesome</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="mt-20 -mx-4 sm:-mx-12 md:mx-0">
+                <img class="md:rounded-3xl" src="https://assets-global.website-files.com/63340e4175515b8b5cefdbd4/63749f508df3bb443c4876ac_funding%20(1)-p-1600.png" alt="">
+                <div class="py-6 flex items-center justify-center gap-4">
+                    <span class="text-gray-500 font-medium dark:text-gray-400">Share on :</span>
+                    <a href="" class="h-10 w-10 flex text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primaryLight">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 m-auto" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                    </a>
+                    <a href="" class="h-10 w-10 flex text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primaryLight">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                        </svg>
+                    </a>
+                    <a href="" class="h-10 w-10 flex text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primaryLight">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="-mx-4 sm:-mx-12 lg:mx-0 border-y border-gray-100 dark:border-gray-800">
+                <div class="max-w-2xl mx-auto py-12 space-y-8 px-4 sm:px-12 xl:px-0 text-gray-600 dark:text-gray-400">
+                    <div class="space-y-4">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ducimus corporis dolores dolorem voluptas expedita, nulla explicabo qui aliquid facilis quam, facere voluptatem accusantium minus recusandae, exercitationem ipsam alias impedit.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ducimus corporis dolores dolorem voluptas expedita, nulla explicabo qui aliquid facilis quam, facere voluptatem accusantium minus recusandae, exercitationem ipsam alias impedit.</p>
+                    </div>
 
-                            <div class="-mx-6 lg:mx-0 lg:w-2/3 pr-2 lg:pr-0 pt-2 pl-2 rounded-t-2xl border-r lg:rounded-tr-none lg:rounded-tl-2xl lg:border-r-0 border-t border-l border-gray-100 dark:border-gray-700">
-                                <img class="rounded-t-xl lg:rounded-tl-xl lg:rounded-br-3xl lg:rounded-tr-none dark:hidden" src="https://salient.tailwindui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpayroll.517af4e7.png&w=2048&q=75" alt="">
-                                <img class="rounded-t-xl lg:rounded-tl-xl lg:rounded-br-3xl lg:rounded-tr-none hidden dark:block" src="https://assets-global.website-files.com/63340e4175515b8b5cefdbd4/63749f508df3bb443c4876ac_funding%20(1)-p-1600.png" alt="">
-                            </div>
+                    <div class="space-y-6">
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl">Supernova's Seed Round and Our New Design Token Manager</h2>
+                        <div class="space-y-4">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ducimus corporis dolores dolorem voluptas expedita, nulla explicabo qui aliquid facilis quam, facere voluptatem accusantium minus recusandae, exercitationem ipsam alias impedit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ducimus corporis dolores dolorem voluptas expedita, nulla explicabo qui aliquid facilis quam, facere voluptatem accusantium minus recusandae, exercitationem ipsam alias impedit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident accusantium placeat distinctio ratione reprehenderit quam quasi quia, dolores facilis quod cumque tempore? Dolorem nisi, aperiam harum nam repellendus deleniti odio.</p>
                         </div>
                     </div>
-                    <div class="mb-12 grid lg:grid-cols-2 gap-6">
-                        <div class="p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
-                            <div class="relative sm:flex gap-6">
-                                <div class="sm:w-1/3 md:w-2/5 lg:w-1/3 -mx-6 -mt-6 sm:mr-0 sm:-mb-6 sm:-ml-6 sm:-mt-6 flex p-10 rounded-2xl border border-dashed dark:border-gray-700 bg-gray-100 dark:bg-gray-900/60">
-                                    <img class="w-auto m-auto sm:h-16 lg:h-12" src="./images/clients/nuxt.svg" loading="lazy" alt="airbnb"/>
-                                </div>
-                                <div class="sm:w-2/3 md:w-3/5 lg:w-2/3 mt-6 sm:mt-0 space-y-6">
-                                    <div class="">
-                                        <h4 class="text-xl text-gray-800 font-semibold dark:text-white">Increased sales by 360%</h4>
-                                        <p class="mt-2 text-gray-600 dark:text-gray-400">Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
-                                        
-                                        <div class="my-4 relative 
-                                                    before:z-[1] before:absolute before:-left-0.5 before:inset-y-0 before:my-auto before:w-1 before:h-1 before:rounded-full before:bg-gray-400 
-                                                    after:z-[1] after:absolute after:-right-0.5 after:inset-y-0 after:my-auto after:w-1 after:h-1 after:rounded-full after:bg-gray-400
-                                        ">
-                                            <div aria-hidden="true" class="absolute inset-0 m-auto w-full border-t border-dashed h-px dark:border-gray-600"></div>
-                                            <div class="relative pl-12 pr-6 flex items-center justify-between">
-                                              <div class="relative flex items-center dark:bg-gray-800 before:absolute before:-right-0.5 before:inset-y-0 before:my-auto before:w-1 before:h-1 before:rounded-full before:bg-red-400">
-                                                <span class="px-2.5 py-1 border border-red-100 text-sm tracking-wider bg-red-50 text-red-900 rounded-full dark:bg-red-500/10 dark:text-red-300 dark:border-red-300/40">132k</span>
-                                              </div>
-                                              <div class="relative flex items-center dark:bg-gray-800 before:absolute before:-left-0.5 before:inset-y-0 before:my-auto before:w-1 before:h-1 before:rounded-full before:bg-green-400">
-                                                <span class="px-2.5 py-1 border border-green-100 text-sm tracking-wider bg-green-50 text-green-900 rounded-full dark:bg-green-500/10 dark:text-green-300 dark:border-green-300/40">396k</span>
-                                              </div>
-                                            </div>
-                                        </div>
-                                        <p class="text-gray-600 dark:text-gray-400">Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
-                                        
-                                    </div>
-                                </div>
-                            </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl">Our New Design Token Manager</h2>
+                        <div class="space-y-4">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ducimus corporis dolores dolorem voluptas expedita, nulla explicabo qui aliquid facilis quam, facere voluptatem accusantium minus recusandae, exercitationem ipsam alias impedit.</p>
+                            <p>Lorem ipsum dolor sit amet <a href="" class="underline font-medium text-primary dark:text-primaryLight">Rem ducimus corporis</a>  dolores dolorem voluptas expedita, nulla explicabo qui aliquid facilis quam, facere voluptatem accusantium minus recusandae, exercitationem ipsam alias impedit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident accusantium placeat distinctio ratione reprehenderit quam quasi quia, dolores facilis quod cumque tempore? Dolorem nisi, aperiam harum nam repellendus deleniti odio.</p>
                         </div>
-                        <div class="p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
-                          <div class="relative sm:flex gap-6">
-                              <div class="sm:w-1/3 md:w-2/5 lg:w-1/3 -mx-6 -mt-6 sm:mr-0 sm:-mb-6 sm:-ml-6 sm:-mt-6 flex p-10 rounded-2xl border border-dashed dark:border-gray-700 bg-gray-100 dark:bg-gray-900/60">
-                                  <img class="w-auto m-auto sm:h-16 lg:h-12" src="./images/clients/nuxt.svg" loading="lazy" alt="airbnb"/>
-                              </div>
-                              <div class="sm:w-2/3 md:w-3/5 lg:w-2/3 mt-6 sm:mt-0 space-y-6">
-                                  <div class="">
-                                      <h4 class="text-xl text-gray-800 font-semibold dark:text-white">Increased sales by 360%</h4>
-                                      <p class="mt-2 text-gray-600 dark:text-gray-400">Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
-                                      
-                                      <div class="my-4 relative 
-                                                  before:z-[1] before:absolute before:-left-0.5 before:inset-y-0 before:my-auto before:w-1 before:h-1 before:rounded-full before:bg-gray-400 
-                                                  after:z-[1] after:absolute after:-right-0.5 after:inset-y-0 after:my-auto after:w-1 after:h-1 after:rounded-full after:bg-gray-400
-                                      ">
-                                          <div aria-hidden="true" class="absolute inset-0 m-auto w-full border-t border-dashed h-px dark:border-gray-600"></div>
-                                          <div class="relative pl-12 pr-6 flex items-center justify-between">
-                                            <div class="relative flex items-center dark:bg-gray-800 before:absolute before:-right-0.5 before:inset-y-0 before:my-auto before:w-1 before:h-1 before:rounded-full before:bg-red-400">
-                                              <span class="px-2.5 py-1 border border-red-100 text-sm tracking-wider bg-red-50 text-red-900 rounded-full dark:bg-red-500/10 dark:text-red-300 dark:border-red-300/40">132k</span>
-                                            </div>
-                                            <div class="relative flex items-center dark:bg-gray-800 before:absolute before:-left-0.5 before:inset-y-0 before:my-auto before:w-1 before:h-1 before:rounded-full before:bg-green-400">
-                                              <span class="px-2.5 py-1 border border-green-100 text-sm tracking-wider bg-green-50 text-green-900 rounded-full dark:bg-green-500/10 dark:text-green-300 dark:border-green-300/40">396k</span>
-                                            </div>
-                                          </div>
-                                      </div>
-                                      <p class="text-gray-600 dark:text-gray-400">Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
-                                      
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
+                        <img class="rounded-2xl" src="https://assets-global.website-files.com/63340e4175515b8b5cefdbd4/63749f508df3bb443c4876ac_funding%20(1)-p-1600.png" alt="">
                     </div>
-                    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                        <div class="row-start-1 md:row-start-2 sm:col-span-2 lg:row-start-1 lg:col-span-1 relative group p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700">
-                            <div class="absolute inset-0 scale-105 rounded-3xl bg-gradient-to-b from-transparent hidden dark:block dark:to-gray-900/80"></div>
-                            <div class="relative sm:flex gap-6 lg:block">
-                                <div class="sm:w-1/3 lg:w-auto -mx-6 -mt-6 sm:mr-0 sm:-mb-6 sm:-ml-6 lg:-mx-6 lg:mb-0 sm:-mt-6 flex p-10 rounded-2xl border border-dashed dark:border-gray-700 bg-gray-100 dark:bg-gray-800">
-                                    <img class="w-auto m-auto sm:h-16 lg:h-12 dark:grayscale dark:invert dark:contrast-100" src="https://tailus.io/sources/blocks/sponsors/preview/images/clients/automatic.svg" loading="lazy" alt="airbnb"/>
-                                </div>
-                                <div class="sm:w-2/3 lg:w-auto mt-6 sm:mt-0 lg:mt-6 space-y-6">
-                                    <p class="text-gray-600 dark:text-gray-400">Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
-                                
-                                    <div class="pt-4 border-t border-gray-200 dark:border-gray-700">
-                                        <p class="mt-2 mb-8 text-gray-600 dark:text-gray-300">Veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
-                                        <div class="flex gap-4">
-                                            <img class="w-12 h-12 rounded-full" src="https://pbs.twimg.com/profile_images/1372441824560771075/DTcuXT0Z_400x400.jpg" alt="" width="" height="" loading="lazy">
-                                            <div>
-                                            <h6 class="text-lg font-medium text-gray-700 dark:text-white">Rodrigo Aguilar</h6>
-                                            <p class="text-sm text-gray-500">Creator of Tailwind Awesome</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl">Our New Design Token Manager</h2>
                         <div class="space-y-4">
-                            <div class="relative p-2 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700">
-                                <div class="relative">
-                                    <div class="p-10 rounded-2xl border border-dashed dark:border-gray-700 bg-gray-100 dark:bg-gray-800">
-                                        <img class="w-auto mx-auto h-12 dark:grayscale dark:invert dark:contrast-100" src="./images/clients/microsoft.svg" loading="lazy" alt="airbnb"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="relative group p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
-                                <div class="absolute inset-0 scale-105 rounded-3xl bg-gradient-to-b from-transparent hidden dark:block dark:to-gray-900/80"></div>
-                                <div class="relative">
-                                    <div class="-mx-6 -mt-6 p-10 rounded-2xl border border-dashed dark:border-gray-700 bg-gray-100 dark:bg-gray-800">
-                                        <img class="w-auto mx-auto h-12 dark:grayscale dark:invert dark:contrast-100" src="https://tailus.io/sources/blocks/sponsors/preview/images/clients/automatic.svg" loading="lazy" alt="airbnb"/>
-                                    </div>
-                                    <p class="mb-3 mt-6 text-gray-600 dark:text-gray-400">Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
-                                    <div class="flex items-end gap-4">
-                                        <a href="https://tailus.io">website.com</a>
-                                        <a href="contact.html" class="relative flex h-12 w-12 ml-auto items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-gray-100 before:border before:border-gray-200 dark:before:bg-gray-800 dark:before:border-gray-700 before:transition-transform before:duration-300 group-hover:before:scale-110 active:duration-75 active:before:scale-95">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="relative w-4 h-4 transition duration-300 group-hover:-rotate-45">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ducimus corporis dolores dolorem voluptas expedita, nulla explicabo qui aliquid facilis quam, facere voluptatem accusantium minus recusandae, exercitationem ipsam alias impedit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ducimus corporis dolores dolorem voluptas expedita, nulla explicabo qui aliquid facilis quam, facere voluptatem accusantium minus recusandae, exercitationem ipsam alias impedit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident accusantium placeat distinctio ratione reprehenderit quam quasi quia, dolores facilis quod cumque tempore? Dolorem nisi, aperiam harum nam repellendus deleniti odio.</p>
                         </div>
+
+                        <div class="grid grid-cols-2 gap-6">
+                            <img class="rounded-2xl" src="https://assets-global.website-files.com/63340e4175515b8b5cefdbd4/63749f508df3bb443c4876ac_funding%20(1)-p-1600.png" alt="">
+                            <p>Similique, voluptate fugit esse quidem cum voluptatibus quibusdam facere corrupti! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate recusandae repellendus aliquid distinctio illo et fuga. Nesciunt nobis consequuntur id a dignissimos molestias modi, error, cumque aliquid possimus recusandae quisquam.</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <h2 class="text-2xl font-bold text-gray-800 dark:text-white md:text-3xl">Conclusion</h2>
                         <div class="space-y-4">
-                            <div class="relative group p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
-                                <div class="absolute inset-0 scale-105 rounded-3xl bg-gradient-to-b from-transparent hidden dark:block dark:to-gray-900/80"></div>
-                                <div class="relative">
-                                    <div class="-mx-6 -mt-6 p-10 rounded-2xl border border-dashed dark:border-gray-700 bg-gray-100 dark:bg-gray-800">
-                                        <img class="w-auto mx-auto h-12 dark:grayscale dark:invert dark:contrast-100" src="./images/clients/airbnb.svg" loading="lazy" alt="airbnb"/>
-                                    </div>
-                                    <p class="mb-3 mt-6 text-gray-600 dark:text-gray-400">Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
-                                    <div class="flex items-end gap-4">
-                                        <a href="https://tailus.io">website.com</a>
-                                        <a href="contact.html" class="relative flex h-12 w-12 ml-auto items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-gray-100 before:border before:border-gray-200 dark:before:bg-gray-800 dark:before:border-gray-700 before:transition-transform before:duration-300 group-hover:before:scale-110 active:duration-75 active:before:scale-95">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="relative w-4 h-4 transition duration-300 group-hover:-rotate-45">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="relative p-2 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700">
-                                <div class="relative">
-                                    <div class="p-10 rounded-2xl border border-dashed dark:border-gray-700 bg-gray-100 dark:bg-gray-800">
-                                        <img class="w-auto mx-auto h-12 dark:grayscale dark:invert dark:contrast-100" src="./images/clients/microsoft.svg" loading="lazy" alt="airbnb"/>
-                                    </div>
-                                </div>
-                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ducimus corporis dolores dolorem voluptas expedita, nulla explicabo qui aliquid facilis quam, facere voluptatem accusantium minus recusandae, exercitationem ipsam alias impedit.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident accusantium placeat distinctio ratione reprehenderit quam quasi quia, dolores facilis quod cumque tempore? Dolorem nisi, aperiam harum nam repellendus deleniti odio.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-20 border-b border-gray-100 dark:border-gray-800">
+                <h3 class="text-center text-2xl font-semibold text-gray-800 dark:text-white">Don't miss an article</h3>
+                <form action="" method="post" class="mt-8 relative z-10 flex items-center dark:text-white gap-4 sm:w-4/5 md:w-3/5 mx-auto lg:w-2/5">
+                    <div class="w-full sm:w-4/5 relative flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute left-4 w-5 h-5 text-gray-500 dark:text-gray-300">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+                        </svg>
+                        <input name="email" aria-label="your email" type="email" placeholder="Your email to get all updates" autocomplete="username" class="shadow text-sm shadow-gray-600/10 dark:shadow-blue-900/20 bg-white dark:bg-gray-900 w-full pl-12 pr-5 py-2.5 placeholder-gray-500 dark:placeholder-gray-200 rounded-full border border-gray-200 dark:border-gray-700 invalid:border-red-500">
+                    </div>
+                    <button type="submit" name="subscribe" class="relative w-16 flex h-11 items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary dark:before:bg-primaryLight before:transition-transform before:duration-300 active:duration-75 active:before:scale-95 sm:w-max">
+                        <span class="hidden sm:block leading-3 relative text-base font-semibold text-white dark:text-gray-900">Subscribe</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative h-6 w-6 mx-auto text-white dark:text-gray-900 sm:hidden">
+                            <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+                        </svg>   
+                    </button>
+                </form>
+            </div>
+
+            <div class="py-20 mx-auto lg:w-3/5">
+                <h3 class="text-center text-2xl font-semibold text-gray-800 dark:text-white">Next article</h3>
+                <div class="mt-8">
+                    <div class="group relative hover:z-10 -mx-4 sm:-mx-8 p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 shadow-2xl shadow-gray-600/10 sm:gap-8 sm:flex">
+                        <div class="sm:w-2/6 rounded-3xl overflow-hidden transition-all duration-500 group-hover:rounded-xl">
+                        <img
+                            src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+                            alt="art cover"
+                            loading="lazy"
+                            width="1000"
+                            height="667"
+                            class="h-56 sm:h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
+                        />
+                        </div>
+                        
+                        <div class="sm:p-2 sm:pl-0 sm:w-4/6">
+                        <span class="mt-4 mb-2 inline-block font-medium text-gray-400 dark:text-gray-500 sm:mt-0">Jul 27 2022</span>
+                        <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
+                            Provident de illo eveniet commodi fuga fugiat laboriosam expedita.
+                        </h3>
+                        <p class="my-6 text-gray-600 dark:text-gray-300">
+                            Laudantium in, voluptates ex placeat quo harum aliquam totam,
+                            doloribus eum impedit atque...
+                        </p>
+            
+                        <div class="flex gap-4">
+                            <a href="#" class="px-3 py-1 rounded-full border border-gray-100 text-sm font-medium text-primary transition duration-300 hover:border-transparent hover:bg-primary hover:text-white dark:border-gray-700 dark:text-gray-300">
+                            Tailwindcss
+                            </a>
+                            <a href="#" class="px-3 py-1 rounded-full border border-gray-100 text-sm font-medium text-primary transition duration-300 hover:border-transparent hover:bg-primary hover:text-white dark:border-gray-700 dark:text-gray-300">
+                            VueJS
+                            </a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -315,10 +272,8 @@
         </div>
     </div>
 
-
     <div class="mt-36 bg-gradient-to-b from-transparent to-gray-100 dark:to-darker pb-20">
         <div class="container m-auto px-6 text-center md:px-12 lg:px-20">
-
             <div class="relative h-56 w-56 mx-auto flex items-center justify-center">
                 <div class="absolute inset-0 flex it flex-wrap blur-3xl opacity-40 dark:opacity-70">
                     <div aria-hidden="true" class="h-1/2 w-1/2 bg-primary"></div>
