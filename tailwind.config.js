@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin")
 
 module.exports = {
   content : ['./*.html'],
@@ -989,5 +990,9 @@ module.exports = {
     "active",
     "disabled",
   ],
-  plugins: [],
+  plugins: [
+    plugin(function({ addVariant }) {
+      addVariant('children', '&>*')
+    })
+  ]
 }
