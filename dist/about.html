@@ -9,14 +9,14 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&amp;display=swap" rel="stylesheet"/>
     <script type="module" crossorigin src="/assets/app.b27bff68.js"></script>
-    <link rel="stylesheet" href="/assets/app.206eb2b2.css">
+    <link rel="stylesheet" href="/assets/app.20ce1406.css">
   </head>
   <body class="bg-white min-h-screen selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
     <header>
         <input type="checkbox" name="hbr" id="hbr" class="hbr peer" hidden aria-hidden="true">
-        <nav class="fixed inset-x-0 z-20 w-full backdrop-blur navbar peer-checked:navbar-active">
+        <nav class="fixed border-b border-gray-100 dark:border-gray-700/30 inset-x-0 z-20 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur navbar peer-checked:navbar-active">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
-                <div class="flex flex-wrap items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative">
+                <div class="flex flex-wrap items-center justify-between gap-6 lg:py-4 lg:gap-0 relative">
                     <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav" class="hidden peer">
                     <div class="relative z-20 w-full flex justify-between lg:w-max md:px-0 peer-checked:navbar-active">
                         <a href="/" aria-label="logo" class="flex space-x-2 items-center">
@@ -100,7 +100,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="fixed z-20 top-[1.125rem] right-16 lg:hidden group flex flex-col rounded-full border border-gray-200 bg-gray-100 transition duration-300 hover:h-[7.6rem] dark:border-gray-700 dark:bg-gray-800">
+                    <div class="fixed z-20 top-2.5 right-16 sm:right-24 lg:hidden group flex flex-col rounded-full border border-gray-200 bg-gray-100 transition duration-300 hover:h-[7.6rem] dark:border-gray-700 dark:bg-gray-800">
                         <button class="switcher tansition group order-2 -mt-10 flex h-10 w-10 rounded-full opacity-0 duration-300 hover:bg-gray-100 group-hover:mt-0 group-hover:opacity-100 dark:order-1 dark:mt-0 dark:opacity-100 dark:hover:bg-gray-700" >
                         <svg xmlns="http://www.w3.org/2000/svg" class="transistion m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 dark:fill-gray-300 dark:group-hover:fill-yellow-400" viewBox="0 0 20 20" fill="currentColor">
                             <path
@@ -124,14 +124,14 @@
     </header>
 
     <div class="relative">
-        <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30">
+        <div aria-hidden="true" class="absolute top-56 inset-0 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30">
             <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
             <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
         </div>
         <div class="pt-32 sm:pt-36 md:pt-40 lg:pt-56 mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
             <div class="relative z-10">
                 <div class="flex flex-col">
-                    <h1 class="font-bold text-5xl sm:text-6xl lg:text-7xl text-gray-900 dark:text-white">
+                    <h1 class="font-bold text-5xl text-center md:text-left sm:text-6xl lg:text-7xl text-gray-900 dark:text-white">
                         Design, Build,
                         <span class="relative ">
                             <svg class="absolute -bottom-1 opacity-50 inset-x-0 w-full" xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 260 15.6">
@@ -149,7 +149,7 @@
                             
                         </span>
                     </h1>
-                    <p class="lg:w-3/4 mt-12 text-lg sm:text-xl text-gray-600 dark:text-gray-300">Computers used to be magical. But much of that magic has been lost over time, replaced by subpar tools and practices that slow teams down and hold great work back.
+                    <p class="text-center md:text-left lg:w-3/4 mt-12 text-lg sm:text-xl text-gray-600 dark:text-gray-300">Computers used to be magical. But much of that magic has been lost over time, replaced by subpar tools and practices that slow teams down and hold great work back.
                     </p>
                 </div>
             </div>
@@ -194,7 +194,7 @@
         </div>
     </div>
 
-    <div class="pt-32 border-t border-gray-100 dark:border-gray-800">
+    <div class="pt-16 md:pt-32 border-t border-gray-100 dark:border-gray-800">
         <div class="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
             <span class="uppercase tracking-widest text-sm font-semibold text-primary dark:text-secondaryLight">Mission</span>
             <div class="mt-8 space-y-6 md:flex flex-row-reverse md:gap-6 justify-center md:space-y-0">
@@ -219,13 +219,13 @@
     </div>
 
     <svg aria-hidden="true" class="text-gray-100 dark:text-darker" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="currentColor" fill-opacity="1" d="M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,224C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-    <div class="relative bg-gray-100 dark:bg-darker">
+    <div class="pt-16 sm:pt-8 md:py-0 relative bg-gray-100 dark:bg-darker">
         <div class="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
-            <div class="lg:mx-auto lg:text-center">
+            <div class="text-center">
                 <h2 class="text-3xl font-bold md:text-4xl text-gray-900 dark:text-white">
                     We<span class="px-2 relative bg-clip-text text-transparent bg-gradient-to-r from-primaryLight dark:from-secondary to-secondaryLight dark:to-purple-300">Scaled !</span>
                 </h2>
-                <p class="mt-6 md:ml-0 md:w-3/4 lg:w-3/5 lg:mx-auto text-gray-700 dark:text-gray-300">
+                <p class="mt-6 md:w-3/4 lg:w-3/5 mx-auto text-gray-700 dark:text-gray-300">
                     A growing team doesn't need to mean growing pains. With best-of-breed features, security, privacy, and the right tool for every step of your journey - Jira Software allows you to scale without friction - regardless of your company size. 
                 </p>
             </div>
@@ -246,10 +246,10 @@
                 </div>
             </div>
     
-            <div>
+            <div class="pl-2">
                 <div class="py-32 relative before:absolute before:mx-auto before:inset-0 before:w-px before:h-full lg:before:bg-gray-200 lg:dark:before:bg-gray-900 after:absolute after:inset-0 after:w-px after:h-32 lg:after:mx-auto after:bg-gradient-to-t lg:after:bg-gradient-to-b after:from-gray-900/20 dark:after:from-white/20 after:via-gray-200 dark:after:via-gray-800 after:before:to-gray-900">
-                    <div class="relative pb-12 md:pb-20 flex items-center gap-10 flex-col md:flex-row pl-4 sm:pl-12 lg:pl-0
-                                before:absolute lg:before:left-[9.1rem] before:inset-0 before:w-px before:h-1/2 before:from-gray-400/70 before:to-gray-400/70 dark:before:from-transparent before:bg-gradient-to-b lg:before:from-transparent lg:before:to-gray-400/70 dark:lg:before:to-gray-700
+                    <div class="relative pb-12 md:pb-20 flex items-center gap-10 flex-col md:flex-row pl-6 sm:pl-12 lg:pl-0
+                                before:absolute lg:before:left-[9.1rem] before:inset-0 before:w-px before:h-1/2 before:from-gray-400/70 before:to-gray-400/70 dark:before:from-gray-700 dark:lg:before:from-transparent before:bg-gradient-to-b lg:before:from-transparent dark:before:to-gray-700 dark:lg:before:to-gray-700
                                 after:absolute lg:after:left-[9.1rem] after:inset-x-0 after:bottom-0 after:w-px after:h-1/2 after:border-r after:border-dashed after:border-gray-400/70 dark:after:border-gray-700">
                         <div class="w-full flex flex-col gap-10 lg:items-center md:w-1/2 lg:flex-row">
                             <div class="w-max hidden md:block">
@@ -258,7 +258,7 @@
                                 </div>
                             </div>
                             
-                            <div aria-hidden="true"  class="w-max h-max z-[1] absolute top-8 md:inset-y-0 -left-2.5 my-auto lg:relative lg:ml-2.5 lg:-mr-2.5">
+                            <div aria-hidden="true"  class="w-max h-max z-[1] absolute top-[1.80rem] md:inset-y-0 -left-2.5 my-auto lg:relative lg:ml-2.5 lg:-mr-2.5">
                                 <div class="w-5 h-5 rounded-full border-8 ring-1 ring-gray-400/70 dark:ring-gray-700 bg-primary dark:bg-white border-white dark:border-darker"></div>
                             </div>
                             <div class="">
@@ -275,7 +275,7 @@
                         <div aria-hidden="true"  class="my-3.5 -ml-8 lg:ml-[7.15rem] w-16 h-16 rounded-bl-full rounded-tr-3xl rotate-45 border border-dashed border-gray-400/70 dark:border-gray-700"></div>
                         <span class="text-gray-700 dark:text-white">12 Satisfied <a href="customers.html" class="underline text-primary dark:text-primaryLight">Customers</a> !</span>
                     </div>
-                    <div class="relative py-12 md:py-20 flex items-center gap-10 flex-col md:flex-row pl-4 sm:pl-12 lg:pl-0
+                    <div class="relative py-12 md:py-20 flex items-center gap-10 flex-col md:flex-row pl-6 sm:pl-12 lg:pl-0
                                 after:absolute lg:after:left-[9.1rem] after:inset-0 after:w-px after:h-full after:border-r after:border-dashed after:border-gray-400/70 dark:after:border-gray-700">
                         <div class="w-full flex flex-col gap-10 lg:items-center md:w-1/2 lg:flex-row">
                             <div class="w-max hidden md:block">
@@ -287,7 +287,7 @@
                                 </div>
                             </div>
                             
-                            <div aria-hidden="true" class="w-max h-max z-[1] absolute top-8 md:inset-y-0 -left-2.5 my-auto lg:relative lg:ml-2.5 lg:-mr-2.5">
+                            <div aria-hidden="true" class="w-max h-max z-[1] absolute top-[4.80rem] md:inset-y-0 -left-2.5 my-auto lg:relative lg:ml-2.5 lg:-mr-2.5">
                                 <div class="w-5 h-5 rounded-full border-8 ring-1 ring-gray-400/70 dark:ring-gray-700 bg-purple-600 dark:bg-white border-white dark:border-darker"></div>
                             </div>
                             <div class="">
@@ -313,7 +313,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="relative py-12 md:py-20 flex items-center gap-10 flex-col md:flex-row pl-4 sm:pl-12 lg:pl-0
+                    <div class="relative py-12 md:py-20 flex items-center gap-10 flex-col md:flex-row pl-6 sm:pl-12 lg:pl-0
                                 after:absolute lg:after:left-[9.1rem] after:inset-0 after:w-px after:h-full after:border-r after:border-dashed after:border-gray-400/70 dark:after:border-gray-700">
                         <div class="w-full flex flex-col gap-10 lg:items-center md:w-1/2 lg:flex-row">
                             <div class="w-max hidden md:block">
@@ -325,7 +325,7 @@
                                 </div>
                             </div>
                             
-                            <div aria-hidden="true" class="w-max h-max z-[1] absolute top-8 md:inset-y-0 -left-2.5 my-auto lg:relative lg:ml-2.5 lg:-mr-2.5">
+                            <div aria-hidden="true" class="w-max h-max z-[1] absolute top-[4.80rem] md:inset-y-0 -left-2.5 my-auto lg:relative lg:ml-2.5 lg:-mr-2.5">
                                 <div class="w-5 h-5 rounded-full border-8 ring-1 ring-gray-400/70 dark:ring-gray-700 bg-primary dark:bg-white border-white dark:border-darker"></div>
                             </div>
                             <div class="">
@@ -351,7 +351,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="relative py-12 md:py-20 flex items-center gap-10 flex-col md:flex-row pl-4 sm:pl-12 lg:pl-0
+                    <div class="relative py-12 md:py-20 flex items-center gap-10 flex-col md:flex-row pl-6 sm:pl-12 lg:pl-0
                                 before:absolute lg:before:left-[9.1rem] before:inset-x-0 before:bottom-0 before:w-px before:h-1/2 before:bg-gradient-to-t before:from-transparent before:to-gray-400/70 dark:before:to-gray-700
                                 after:absolute lg:after:left-[9.1rem] after:top-0 after:inset-0 after:w-px after:h-1/2 after:border-r after:border-dashed after:border-gray-400/70 dark:after:border-gray-700">
                         <div class="w-full flex flex-col gap-10 lg:items-center md:w-1/2 lg:flex-row">
@@ -364,7 +364,7 @@
                                 </div>
                             </div>
                             
-                            <div class="w-max h-max z-[1] absolute top-8 md:inset-y-0 -left-2.5 my-auto lg:relative lg:ml-2.5 lg:-mr-2.5">
+                            <div class="w-max h-max z-[1] absolute top-[4.80rem] md:inset-y-0 -left-2.5 my-auto lg:relative lg:ml-2.5 lg:-mr-2.5">
                                 <div class="w-5 h-5 rounded-full border-8 ring-1 ring-gray-400/70 dark:ring-gray-700 bg-yellow-600 dark:bg-white border-white dark:border-darker"></div>
                             </div>
                             <div class="">
