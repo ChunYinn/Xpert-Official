@@ -12,9 +12,9 @@
   <body class="bg-white min-h-screen selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
     <header>
         <input type="checkbox" name="hbr" id="hbr" class="hbr peer" hidden aria-hidden="true">
-        <nav class="absolute dark:border-b dark:border-gray-700/30 inset-x-0 z-20 w-full bg-white/80 dark:bg-transparent backdrop-blur navbar peer-checked:navbar-active md:bg-transparent">
+        <nav class="fixed border-b border-gray-100 dark:border-gray-700/30 inset-x-0 z-20 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur navbar peer-checked:navbar-active">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-5xl xl:px-0">
-                <div class="flex flex-wrap items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative">
+                <div class="flex flex-wrap items-center justify-between gap-6 lg:py-4 lg:gap-0 relative">
                     <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav" class="hidden peer">
                     <div class="relative z-20 w-full flex justify-between lg:w-max md:px-0 peer-checked:navbar-active">
                         <a href="/" aria-label="logo" class="flex space-x-2 items-center">
@@ -73,7 +73,7 @@
                                 </li>
                             </ul>
                         </div>
-
+  
                         <div class="mt-12 lg:mt-0 lg:mr-6 lg:pl-6 w-full space-y-2 border-primary/10 dark:border-gray-700 flex flex-col -ml-1 sm:flex-row lg:space-y-0 md:w-max lg:border-l">
                             <a href="contact.html" class="relative w-full flex h-9 ml-auto items-center justify-center sm:px-4 before:absolute before:inset-0 before:rounded-full before:bg-primary dark:before:bg-primaryLight lg:before:bg-gray-100 lg:before:border lg:before:border-gray-200 lg:dark:before:bg-gray-800 dark:before:border-gray-700 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95">
                                 <span class="relative text-sm font-semibold lg:text-primary text-white dark:text-gray-900 lg:dark:text-white">Get started</span>                    
@@ -98,7 +98,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="fixed z-20 top-[1.125rem] right-16 lg:hidden group flex flex-col rounded-full border border-gray-200 bg-gray-100 transition duration-300 hover:h-[7.6rem] dark:border-gray-700 dark:bg-gray-800">
+                    <div class="fixed z-20 top-2.5 right-16 sm:right-24 lg:hidden group flex flex-col rounded-full border border-gray-200 bg-gray-100 transition duration-300 hover:h-[7.6rem] dark:border-gray-700 dark:bg-gray-800">
                         <button class="switcher tansition group order-2 -mt-10 flex h-10 w-10 rounded-full opacity-0 duration-300 hover:bg-gray-100 group-hover:mt-0 group-hover:opacity-100 dark:order-1 dark:mt-0 dark:opacity-100 dark:hover:bg-gray-700" >
                         <svg xmlns="http://www.w3.org/2000/svg" class="transistion m-auto h-5 w-5 fill-gray-500 duration-300 group-hover:rotate-180 dark:fill-gray-300 dark:group-hover:fill-yellow-400" viewBox="0 0 20 20" fill="currentColor">
                             <path
