@@ -12,7 +12,7 @@
   <body class="bg-white min-h-screen selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
     <header>
         <input type="checkbox" name="hbr" id="hbr" class="hbr peer" hidden aria-hidden="true">
-        <nav class="fixed inset-x-0 z-20 w-full backdrop-blur navbar peer-checked:navbar-active">
+        <nav class="fixed border-b border-gray-100 dark:border-gray-700/30 inset-x-0 z-20 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur navbar peer-checked:navbar-active">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="flex flex-wrap items-center justify-between gap-6 lg:py-4 lg:gap-0 relative">
                     <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav" class="hidden peer">
@@ -75,7 +75,7 @@
                         </div>
 
                         <div class="mt-12 lg:mt-0 lg:mr-6 lg:pl-6 w-full space-y-2 border-primary/10 dark:border-gray-700 flex flex-col -ml-1 sm:flex-row lg:space-y-0 md:w-max lg:border-l">
-                            <a href="contact.html" class="relative w-full flex h-9 ml-auto items-center justify-center sm:px-4 before:absolute before:inset-0 before:rounded-full before:bg-primary dark:before:bg-primaryLight lg:before:bg-gray-200/50 lg:before:border lg:before:border-white/40 lg:dark:before:bg-gray-800 dark:before:border-gray-700 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95">
+                            <a href="contact.html" class="relative w-full flex h-9 ml-auto items-center justify-center sm:px-4 before:absolute before:inset-0 before:rounded-full before:bg-primary dark:before:bg-primaryLight lg:before:bg-gray-100 lg:before:border lg:before:border-gray-200 lg:dark:before:bg-gray-800 dark:before:border-gray-700 before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95">
                                 <span class="relative text-sm font-semibold lg:text-primary text-white dark:text-gray-900 lg:dark:text-white">Get started</span>                    
                             </a>
                         </div>
@@ -120,9 +120,9 @@
             </div>
         </nav>
     </header>
-    <section class="bg-white dark:bg-darker">
+    <section class="">
         <div class="pt-32 sm:pt-40 md:pt-48 mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
-            <div aria-hidden="true" class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30">
+            <div aria-hidden="true" class="absolute inset-0 hidden grid-cols-2 -space-x-52 opacity-50 dark:opacity-30">
                 <div class="blur-[106px] h-56 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
                 <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
             </div>
@@ -140,7 +140,7 @@
                         <path class="st0" d="M260 6c-1-.6-4.7-1.2-5.8.3-.2-.1.1-.3.2-.4-.9.2-2.2.1-3.6 0s-2.9-.2-4.2 0c-1 1.5-3.9-.6-4.8 1.4l.5-.4c.9.5-1.2 1.4-1.5 1.9-.8-1.2-.1-1-1-2l1.1.4-.3-1c-3.1 2.8-6.2-.9-8.2 1.1.1-.1.1-.3.2-.4-1.4-.5-2.3.8-3.3 1.2-.1-.5.6-.9 1.1-1.3-2.4-.3-6.4 1.2-9 .4-.9.7.4.9-.6 1.5-.8-.2-1.4-.7-.4-1.1-2.3-1.2-7.6 1-11.1-.2-1.8.8-.7 1.1-3.5 1.6.7-.5-.7-1.7 1-1.7l.2-.5c-2.8-.1-6.6-.3-8.1 1.2-.1-1.1-.5-.2-1.6-.8-.4.1 0 .2.2.2-1 .9-1.6-.1-2.3.1l.3-.2-2 .7c-.3-.2-.8-.4-.9-.7v.8c-1.1 0-.5-1-1.9-.8l.3.6c-.9-.4-2.2.4-2.4-.5 0-.2.1-.1.4-.1-1.3-1.2-3.5.3-5.1-.3l.4 1.3c-1.6.4-1-.3-.9-.7-1.1 0-1.3-.4-2.7-.6-.7.3-.4.5-.6.8l-1.5-.4 1-.7c-2.3 1.8-5.6-.4-7.2 1.2-.8-.4.8-.7.3-1-2.6-.9-6 1-8.2 0-3.6-1-7.8-.4-11.8-1.1l.1.3-2.9-.4c-.8.7-2.7.3-4 1.1.1-.3-.1-.7.2-.9-1.2.1-2.6.4-3.3-.1l.4-.3c-2.7-.3-6.4-.5-7.9.1-.9 0-.9-.6-1.1-1-1.6-.1-2.6.2-3.9.7-.3-.2-.7-.3-1-.6l-.6.8c-.6-.1-.1-.7-.6-.9-2.5.9-5.3-.1-7-.1l.2.4c-.7.3-2.1-.3-1.2-.7-3.4-.6-5.1 1.2-9.6.8-.6-1.5-4.1.3-4.8-1.4-1.9.4-3.2-.3-4.5.6 0-.2-.2-.2.1-.3-.8-.6-3.3-.2-5.3.2l-.1-.5c-.9 1.2-4.2.9-4.9 2-.2-.2.4-.5.7-.7-1-1.1-1.8.5-3.1.2.1-.3-.3-.6 0-.8-4.4-1.2-10.6.7-16.3-.1-1.6 0 .6 1.2-1.5 1.1-.6-.6 1-1.1-.3-1.4-.9.7-1.3.5-2.6.5.2-.4 0-.6.9-.9-.7-.5-3.1.9-4.5 0 .1.3-.2.5-.5.7-2.1 1-4.9-.9-5.1-.4 0 0-.7.2-.1.3-.8 0-1.9-.2-1.7-.7-.4.3-.8.8-1.4.8l.3-.6c-.4.1-.8.5-1.1.6l.6.4c-.9-.5-2.6.8-2.6-.4h.3l-1.7-.5c-.7.5-1.3 1-2.5.9-.5-1.3-2.9-.2-4.3-.3l.1-.4c-1.1.6-4 .4-3.5.6-1.1 0-2.6-.2-2-.6-.8.1-2.7.1-3.2.9l-1.8-1c-1 1.6-3.6-.5-3.6 1.2-1-.2-.8-.6-1.5-.9-1.4.9-2.8.8-4.2.7v-.2c-1.4-.1-3.1.8-5.1 1l-.5-1.2c-1 .2-1.3 1.2-2.3 1-.2-.2 0-.3.2-.3-1 .3-2.3.1-3.1-.2-1.5 1-2.7.7-3.9 1.8-1.3-1 1.7-.6.6-1.6-2.2-.4-4.4.4-6.7 1.1-.2-.2 0-.4.1-.7 0 0-1.2.9-2.2 1.8C.9 8.3 0 9.4.5 10c-.5.9-1.2 1.4.9 2 .6-.5 2.5-1.3 2.9-.4l.1-.9c2.6-.6.4 1.8 3.6 1.6l-.7-.3c.6-.1 1.1-.7 1.8-.5.2.2-.2.4-.5.6.9-.5 1.7-.9 2.6-1.4.1.5.1.8-.4 1.2 2.5-.2-.6-1.6 2.4-1.4.6.4-.2.6-.5.9 1.4.7 2.3-.1 3.8-.6.1.8-.9.7.3 1.2-.3-.4-.5-1.1.5-1.2-.4.8.7.4 1.6.5-.2-.3-.1-.6.2-.8.4-.1.8.1 1.4.1l-1.1-.7c1.5-.8 2.4.3 3.6.6-.1.1-.3.3-.5.3 1.2.3 2.5.9 4.1.1l-.3.1c2.9-.9-1-1.3 2.4-2.2 1.1.1-.4 2.6 2.1 1.6-1.3-.6 1.6-1.7 3.1-2L32.4 10c.6 0 1.6-.5 2-.3l-.1-.3c-.2-1.3 1.9.1 3-.7-1.3 1.8-1.4 1.5-1.6 3.2 1-1 2.2-1.9 4.1-1.8l-1.5 1.4c2.5.2 5.5-1.9 7.6-3-.5 1 .3 1.4-.6 2.2l2.4-.3-.7 1.1c1-1.2 2.1-.4 1.9-1.9-.3.2-.2.4-.7.3.1-.4.5-1.4 1.7-1.3.9.3-.5.6-.2 1 .8-.6.9.3 1.7-.1l-.8-.6c.6-.9 1.4-.1 2.2-.5-1 .4-.7.9-.3 1.4l-.1-.1c.8-.1 1.6-.7 2-.2l-.5 1.2.9-.9c.3.1.6.6 0 .8 2.8.7-.1-2.5 3.6-1.5 0 .5-.4.8-1.4.5-.2.7.1 1.1 1.1 1.4v.1c1.9 0 4.4 0 5.6-.8.4.3 0 .6-.4.9 2.1.4 2.8-.7 5 .1l-1-.4c1.4-.6 4-.8 5.3.1l-.4.3c1.3-.7 3.5.6 4 0-.6-.4 0-.6-.8-1l3.4-.7.2 1.2 1.8-.4c-.4-.5 2.4.4 2.5-.7 1 .4-.4.9-.8 1.4 1-.3 1.1.2 2.1-.5l1 1.1 2.6-.7c-.1.1 0 .2-.1.3 1.2-.9 3.1.6 4.6-.9-.1.1-.1.1-.1.2.9-.8 2.9-.2 3.7 0 1.4-.2.6-1 .6-1.4 3.9.4 2.7.3 6-.9 2 1.4-2.4 2.1.1 3 .4-.6 2.1-1.1 4.1-1.3 1.8.5 4.8.9 6.5 1.9l-.2-.9 2.6-.4-1.5 1.2c.4-.3 1.7-.8 2.6-1.2 2.7-.7 1.4 1.9 3.5.7.1.1.1.2.2.3.7-.6 2.4-.3 4.4-.5l-.7 1.1-1.3-.3c.7 1.1 2.1-.1 3.4 0 1.3-.3.7-1.3 1.4-1.6.5.1 1.2-.2 1.6.1 1.1.4.1 1.3-.3 1.8 1-1.1 1.4-.9 3.6-1.3.1.5-.1.8-.4.9.5-.1.9-.3 1.2-.8l.7.7c2.5 1 2.6-2 5.6-1.5-.8.6 2.6 0 3.5.7-1.1.1.4 1.6-.2 2.3 2.4.5 1-1.3 3-1.4l-.9 1.3c1.9-.5.5-.7 2.4-1.1-.5.4.8.4-.3.8 2.5.2 1.9.1 4.1.3l.2-1.3c.7-.1 1 .5 1.2.7-.3 0-.8-.1-.7.1.8 1.2 1.4-.6 2.4.5-.2-.4-.5-1 .4-1.1-.3.8 1.4.8 1.4 1.2-.6-.6 2-.2 2.1-1 1 .7-.4.6-.4 1.1.9-1 3.7 0 4.6-.6 0 .1.1.1.1.2 1.2-.6 3-.7 5.3-1.5l-.8.7c2.2.4 1.4-1.5 3.3-1.5-.4 1.1 3.1 0 2.2 1.2 1.1-.6 2.3-.8 3.1-1.7 1 .6-2.1 1.4-.6 1.8l1.6-.5.3.6c.1-.4 1.5-.4 1.4-.8.2.7.9 1.2.8 1.8 1-.2 2.4.5 3.3-.1l.1.3c1-1.3 3.1-.2 3.6-1.5l.6.7c1.5-.1 1.3-1.5 2-1.8.6 0 1.4-.2 2 0-2 .8 1 1.1 1.4 1.6.8 0 3.1 0 3.7-.7-1 .7-.4 1.2-2.1 1.3.9 1.3 2.6-.2 4.5-.1v.6c2.7-.4 2.8-1.5 4-2.5.3.8.1 1-.7 1.7 1.8.5 4.7-.1 6.7 0 .6.5.2.9-.5 1.1 2.1-.6 4.7.1 6-1.2-.5.5.9.3 1.6.6 0-.3.1-.6.2-.6 1.3-.6 4.1-1.1 5.6-.7l-.5.4c1.7.1 3-.5 4.3-.9 1.3-.4 2.6-.8 4.5-.4.7.3-.7 1.1.7 1 .7-.5.4-1.5 2.2-1.3l-.1.9 1.2-.9c-.7-.7-2.6-.4-1.3-1.2 1.6.8 1.3-.9 3.3 0-.4.1-1 .8-1.3 1.2 2 .4 3.4.1 4.8-.1 1.4-.3 2.8-.6 4.9-.2 2-.8 4.6-1.2 5.9-1.9 0 .9 0 1.7-.8 2.4 1.8 0 2.4-2.1 3.7-.9.7-1.3 4.7-1.2 5-3l2-.8z"/>
                         <path class="st0" d="M58.1 11.1c-1 0-1.9 0-2.3.2.2.2 2.3.6 2.3-.2zM208.2 13.3c-.1 0-.3.1-.4.1.1 0 .3 0 .4-.1zM216.3 12.9c-.1-.1-.2-.2-.4-.3 0 .3.1.5.4.3zM132.6 11.5zM178.5 13.7c.7-.4 1-.7 1-1-.4.1-.7.3-1 1zM163 12.6c-.1.1-.2.1-.3.2.3-.1.3-.2.3-.2zM130.2 12c.7-.4 1.6-.3 2.4-.5-.7.2-1.9-.3-2.4.5zM226.1 11.4l-.7.6.8-.4zM218.6 12c-.3-.1-1.7.3-1.3.6.4-.3.9-.5 1.3-.6zM189.6 11.4l-.3.6.7-.5z"/>
                     </svg>
-                    <span class="md:px-2 relative bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondaryLight">Scale</span>
+                    <span class="md:px-2 relative bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondaryLight dark:from-primaryLight dark:to-secondaryLight">Scale</span>
                 </span>
                     
                 </span>
@@ -202,7 +202,506 @@
         </div>
         </div> 
     </section>
+
+    <section class="mt-32">
+        <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-5xl">For growing teams and organizations</h2>
+                <p class="mt-6 md:w-3/4 lg:w-3/5 mx-auto text-gray-700 dark:text-gray-300">
+                    A growing team doesn't need to mean growing pains. Privacy, and the right tool for every step of your journey - Jira Software friction - company size. 
+                </p>
+
+                <div data-controller="tabs" role="tablist" aria-label="tabs" class="mt-12 w-max mx-auto relative overflow-hidden dark:shadow-none h-12 grid grid-cols-3 gap-x-1 px-[3px] items-center border-gray-200 rounded-full bg-gray-100 border text-gray-600 dark:text-gray-300 dark:border-opacity-60 dark:border-gray-700 dark:bg-darker">
+                    <div class="absolute w-1/3 h-10 tab-indicator rounded-full bg-white shadow-md dark:bg-gray-800 transition-[left] duration-300" style="left: 4px;">
+
+                    </div>
+                    <button role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" tabindex="0" title="tab item" class="tab relative block py-2.5 px-4">
+                        <span class="block w-max m-auto tracking-wider text-sm font-medium text-primary">First Tab</span>
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" tabindex="-1" title="tab item" class="tab relative block py-2.5 px-4 rounded-full hover:text-primary transition-opacity">
+                        <span class="block w-max m-auto tracking-wider text-sm font-medium">Second Tab</span>
+                    </button>
+                    <button role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" tabindex="-1" title="tab item" class="tab relative block py-2.5 px-4 rounded-full hover:text-primary transition-opacity">
+                        <span class="block w-max m-auto tracking-wider text-sm font-medium">Third Tab</span>
+                    </button>
+                </div>
+            </div>
+            <div class="mt-20">
+                <div class="space-y-6 lg:hidden lg:space-y-0">
+                    <div class="md:7/12 lg:w-6/12">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl">
+                            Make work flow across teams while connecting back to company goals
+                        </h3>
+                        <p class="mt-8 text-gray-600 dark:text-gray-300">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem
+                            accusantium nemo perspiciatis delectus atque autem! repellat expedita consequatur! Officiis id consequatur atque doloremque!
+                        </p>
+                        <div class="mt-12 space-y-6">
+                            <div class="flex items-center gap-6">
+                                <div class="w-20 h-20 rounded-3xl flex p-4 border border-gray-200 bg-white dark:bg-gray-900/40 dark:border-gray-600/60">
+                                    <img class="h-8 w-auto m-auto" src="https://cdn-icons-png.flaticon.com/512/3340/3340200.png" alt=""> 
+                                </div>
+                                <div class="w-[calc(100%-7.5rem)]">
+                                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Together as one</h4>
+                                    <p class="mt-1 text-gray-600 dark:text-gray-400">Accusantium nemo perspiciatis delectus atque autem!</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-6">
+                                <div class="w-20 h-20 rounded-3xl flex p-4 border border-gray-200 bg-white dark:bg-gray-900/40 dark:border-gray-600/60">
+                                    <img class="h-8 w-auto m-auto" src="https://cdn-icons-png.flaticon.com/512/5405/5405929.png" alt=""> 
+                                </div>
+                                <div class="w-[calc(100%-7.5rem)]">
+                                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Growth</h4>
+                                    <p class="mt-1 text-gray-600 dark:text-gray-400">Accusalectus atque autem accusantium nemo perspiciatis delectus atque autem!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:5/12 lg:w-6/12">
+                        <img src="./data.svg" class="w-full" alt="image" loading="lazy" width="" height="" />
+                    </div>
+                </div>
+
+                <div class="space-y-6 lg:hidden lg:space-y-0">
+                    <div class="md:7/12 lg:w-6/12">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl">
+                            Make work flow across teams while connecting back to company goals
+                        </h3>
+                        <p class="mt-8 text-gray-600 dark:text-gray-300">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem
+                            accusantium nemo perspiciatis delectus atque autem! repellat expedita consequatur! Officiis id consequatur atque doloremque!
+                        </p>
+                        <div class="mt-12 space-y-6">
+                            <div class="flex items-center gap-6">
+                                <div class="w-20 h-20 rounded-3xl flex p-4 border border-gray-200 bg-white dark:bg-gray-900/40 dark:border-gray-600/60">
+                                    <img class="h-8 w-auto m-auto" src="https://cdn-icons-png.flaticon.com/512/6106/6106288.png" alt=""> 
+                                </div>
+                                <div class="w-[calc(100%-7.5rem)]">
+                                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Together as one</h4>
+                                    <p class="mt-1 text-gray-600 dark:text-gray-400">Accusantium nemo perspiciatis delectus atque autem!</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-6">
+                                <div class="w-20 h-20 rounded-3xl flex p-4 border border-gray-200 bg-white dark:bg-gray-900/40 dark:border-gray-600/60">
+                                    <img class="h-8 w-auto m-auto" src="https://cdn-icons-png.flaticon.com/512/2313/2313906.png" alt=""> 
+                                </div>
+                                <div class="w-[calc(100%-7.5rem)]">
+                                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">New ideas</h4>
+                                    <p class="mt-1 text-gray-600 dark:text-gray-400">Accusalectus atque autem accusantium nemo perspiciatis delectus atque autem!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:5/12 lg:w-6/12">
+                        <img src="./analytics.svg" class="w-full" alt="image" loading="lazy" width="" height="" />
+                    </div>
+                </div>
+
+                <div class="space-y-6 lg:flex items-center lg:space-y-0">
+                    <div class="md:7/12 lg:w-6/12">
+                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl">
+                            Make work flow across teams while connecting back to company goals
+                        </h3>
+                        <p class="mt-8 text-gray-600 dark:text-gray-300">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem
+                            accusantium nemo perspiciatis delectus atque autem! repellat expedita consequatur! Officiis id consequatur atque doloremque!
+                        </p>
+                        <div class="mt-12 space-y-6">
+                            <div class="flex items-center gap-6">
+                                <div class="w-20 h-20 rounded-3xl flex p-4 border border-gray-200 bg-white dark:bg-gray-900/40 dark:border-gray-600/60">
+                                    <img class="h-8 w-auto m-auto" src="https://cdn-icons-png.flaticon.com/512/4727/4727266.png" alt=""> 
+                                </div>
+                                <div class="w-[calc(100%-7.5rem)]">
+                                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">Together as one</h4>
+                                    <p class="mt-1 text-gray-600 dark:text-gray-400">Accusantium nemo perspiciatis delectus atque autem!</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-6">
+                                <div class="w-20 h-20 rounded-3xl flex p-4 border border-gray-200 bg-white dark:bg-gray-900/40 dark:border-gray-600/60">
+                                    <img class="h-8 w-auto m-auto" src="https://cdn-icons-png.flaticon.com/512/584/584796.png" alt=""> 
+                                </div>
+                                <div class="w-[calc(100%-7.5rem)]">
+                                    <h4 class="text-lg font-semibold text-gray-800 dark:text-white">New ideas</h4>
+                                    <p class="mt-1 text-gray-600 dark:text-gray-400">Accusalectus atque autem accusantium nemo perspiciatis delectus atque autem!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:5/12 lg:w-6/12 bg-gray-100 dark:before:border-gray-700 dark:after:border-gray-700 dark:bg-gray-800 relative p-20 before:absolute before:inset-0 before:scale-x-110 before:border-y before:border-gray-200 after:absolute after:inset-0 after:scale-y-110 after:border-x after:border-gray-200">
+                        <div class="overflow-hidden px-10 -mb-20">
+                        <img src="https://tailwindui.com/img/components/feeds.02-stacked-with-avatars-xs.png" class="w-full h-[26rem] object-cover object-top rounded-t-3xl shadow-2xl border" alt="image" loading="lazy" width="" height="" />
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="mt-32">
+        <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+            <div class="space-y-6 lg:flex lg:space-y-0 lg:items-center lg:gap-12">
+                <div class="md:5/12 lg:w-6/12">
+                    <img src="https://images.ctfassets.net/osv85d77hkdf/wVRAmxByWlKRQEha6vHFX/167a162ce23bf46d7878367287a08955/-42-_Illustration.png" alt="image" loading="lazy" width="" height="" />
+                </div>
+                <div class="md:7/12 lg:w-6/12">
+                <h2 class="text-3xl font-bold text-gray-900 dark:text-white md:text-4xl">
+                    Development is carried out by passionate developers
+                </h2>
+                <p class="mt-8 text-gray-600 dark:text-gray-300">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem
+                    accusantium nemo perspiciatis delectus atque autem! repellat expedita consequatur! Officiis id consequatur atque doloremque!
+                </p>
+                <p class="mb-12 mt-4 text-gray-600 dark:text-gray-300">
+                    Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at?
+                    Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.
+                </p>
+                <a href="contact.html" class="relative flex h-11 w-max items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary dark:before:bg-primaryLight before:transition-transform before:duration-300 active:duration-75 active:before:scale-95">
+                    <span class="relative text-base font-semibold text-white dark:text-gray-900">Get started</span>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="relative py-32">
+        <div aria-hidden="true" class="absolute top-60 inset-0 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30">
+            <div class="blur-[106px] h-60 bg-gradient-to-br from-primary to-purple-400 dark:from-blue-700"></div>
+            <div class="blur-[106px] h-40 bg-gradient-to-r from-cyan-400 to-sky-300 dark:to-indigo-600"></div>
+        </div>
+        <div class="relative mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+            <div>
+                <h2 class="mt-4 text-center text-2xl font-bold text-gray-900 dark:text-white md:text-4xl">
+                A technology-first approach to payments <br class="sm:block" hidden />
+                and finance
+                </h2>
+            </div>
+            <div class="mt-16 grid gap-8 sm:w-2/3 sm:mx-auto md:w-full md:grid-cols-2 md:-mx-8 lg:grid-cols-3">
+                <div class="p-8 py-12 sm:p-12 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 shadow-2xl shadow-gray-600/10">
+                <div class="space-y-12 text-center">
+                    <img
+                    src="https://cdn-icons-png.flaticon.com/512/584/584796.png"
+                    class="h-16 w-auto mx-auto"
+                    width="512"
+                    height="512"
+                    alt="burger illustration"
+                    />
+                    <div class="space-y-6">
+                    <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">
+                        First feature
+                    </h3>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nesciunt neque culpa hic illum ab qui error repellendus asperiores unde ut ipsam perferendis nemo fuga cum, eum consectetur, magnam doloremque!
+                    </p>
+                    <a
+                        href="#"
+                        class="group relative flex mx-auto h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative w-5 h-5 text-gray-600 dark:text-white transition duration-300 group-hover:translate-x-1">
+                        <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+                        </svg>                
+                    </a>
+                    </div>
+                </div>
+                </div>
+                <div class="p-8 py-12 sm:p-12 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 shadow-2xl shadow-gray-600/10">
+                    <div class="space-y-12 text-center">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/512/6106/6106288.png"
+                        class="h-16 w-auto mx-auto"
+                        width="512"
+                        height="512"
+                        alt="burger illustration"
+                    />
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">
+                        First feature
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nesciunt neque culpa hic illum ab qui error repellendus asperiores unde ut ipsam perferendis nemo fuga cum, eum consectetur, magnam doloremque!
+                        </p>
+                        <a
+                        href="#"
+                        class="group relative flex mx-auto h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800"
+                        >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative w-5 h-5 text-gray-600 dark:text-white transition duration-300 group-hover:translate-x-1">
+                            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+                        </svg>                
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                <div class="p-8 py-12 sm:p-12 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 shadow-2xl shadow-gray-600/10">
+                    <div class="space-y-12 text-center">
+                    <img
+                        src="https://cdn-icons-png.flaticon.com/512/4727/4727266.png"
+                        class="h-16 w-auto mx-auto"
+                        width="512"
+                        height="512"
+                        alt="burger illustration"
+                    />
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">
+                        First feature
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nesciunt neque culpa hic illum ab qui error repellendus asperiores unde ut ipsam perferendis nemo fuga cum, eum consectetur, magnam doloremque!
+                        </p>
+                        <a
+                        href="#"
+                        class="group relative flex mx-auto h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800"
+                        >
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative w-5 h-5 text-gray-600 dark:text-white transition duration-300 group-hover:translate-x-1">
+                            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
+                        </svg>                
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="mb-32">
+        <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl">Worked with leading tech companies</h2>
+                <p class="mt-6 md:w-3/4 lg:w-3/5 mx-auto text-gray-700 dark:text-gray-300">
+                    A growing team doesn't need to mean growing pains. Privacy, and the right tool for every step of your journey - Jira Software friction - company size. 
+                </p>
+            </div>
+            <div class="mt-12 grid gap-8 md:grid-cols-2">
+                <div class="sm:col-span-2 lg:col-span-1 lg:row-span-2 sm:px-12 rounded-3xl border border-gray-100 dark:border-gray-700 bg-white dark:bg-gray-800 p-8 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                  <div class="flex h-full flex-col justify-center space-y-6 md:space-y-8">
+                    <img class="w-auto mr-auto h-12" src="images/clients/microsoft.svg" loading="lazy" alt="microsoft"/>
+                    <p class="md:text-lg lg:text-xl text-gray-600 dark:text-gray-300">
+                      <span class="font-serif">"</span> Lorem ipsum dolor sit amet consectetur adipisicing
+                      elit. Quaerat repellat perspiciatis excepturi est. Non ipsum iusto aliquam
+                      consequatur repellat provident, omnis ut, sapiente voluptates veritatis cum deleniti
+                      repudiandae ad doloribus. <br> <br> Esse, sint sit aut ducimus ea ipsam velit saepe earum dolorem, dignissimos minima voluptate quo accusamus corporis, quaerat beatae aliquid. Impedit, accusamus. <span class="font-serif">"</span>
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <img
+                            class="h-12 w-12 rounded-full"
+                            src="https://avatars.githubusercontent.com/u/31113941?v=4"
+                            alt="user avatar"
+                            height="220"
+                            width="220"
+                            loading="lazy"
+                        />
+                        <div>
+                            <h6 class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">Jane Doe</h6>
+                            <span class="text-sm text-gray-500">Product Designer</span>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <div class="rounded-3xl space-y-6 border border-gray-100 dark:border-gray-700 bg-white dark:bg-gray-800 p-8 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                    <img class="w-auto h-12" src="images/clients/airbnb.svg" loading="lazy" alt="airbnb" width="" height=""/>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        <span class="font-serif">"</span>Sit amet consectetur adipisicing
+                        elit. Quaerat repellat perspiciatis excepturi est. Provident, omnis ut, sapiente veritatis cum deleniti
+                        repudiandae ad doloribus. <span class="font-serif">"</span>
+                    </p>
+                    <div class="flex items-center gap-3 text-left">
+                        <img
+                            class="h-12 w-12 rounded-full"
+                            src="https://avatars.githubusercontent.com/u/31113941?v=4"
+                            alt="user avatar"
+                            height="220"
+                            width="220"
+                            loading="lazy"
+                        />
+                        <div>
+                            <h6 class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">Jane Doe</h6>
+                            <span class="text-sm text-gray-500">Product Designer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-3xl space-y-6 border border-gray-100 dark:border-gray-700 bg-white dark:bg-gray-800 p-8 shadow-2xl shadow-gray-600/10 dark:shadow-none">
+                    <img class="w-auto h-12" src="images/clients/ge.svg" loading="lazy" alt="ge"/>
+                    <p class="text-gray-600 dark:text-gray-300">
+                        <span class="font-serif">"</span>Sit amet consectetur adipisicing
+                        elit. Quaerat repellat perspiciatis excepturi est. Provident, omnis ut, sapiente veritatis cum deleniti
+                        repudiandae ad doloribus. <span class="font-serif">"</span>
+                    </p>
+                    <div class="flex items-center gap-3 text-left">
+                        <img
+                            class="h-12 w-12 rounded-full"
+                            src="https://avatars.githubusercontent.com/u/31113941?v=4"
+                            alt="user avatar"
+                            height="220"
+                            width="220"
+                            loading="lazy"
+                        />
+                        <div>
+                            <h6 class="text-lg font-semibold leading-none text-gray-600 dark:text-gray-200">Jane Doe</h6>
+                            <span class="text-sm text-gray-500">Product Designer</span>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="relative before:absolute before:inset-0 before:w-96 before:h-px before:bg-gradient-to-r before:from-yellow-300 before:via-pink-400 before:to-transparent after:absolute after:inset-0 after:ml-auto after:mt-auto after:w-96 after:h-px after:bg-gradient-to-l after:from-yellow-300 after:via-pink-400 after:to-transparent">
+        <div class="border-y border-gray-100 to-gray-50 dark:bg-darker dark:border-gray-700">
+            <div class="relative mx-auto md:max-w-full lg:max-w-6xl px-6 md:px-12 xl:px-0">
+                <div class="justify-between md:flex items-end">
+                    <div class="h-max py-16 md:w-6/12 xl:w-5/12">
+                        <div class="text-center md:text-left">
+                            <h2 class="text-5xl font-bold text-gray-800 dark:text-white md:w-max">Subscribe, <br> never miss an update.</h2>
+                            <p class="mb-8 mt-6 text-gray-600 dark:text-gray-300">Our premium modern ui ressources pack includes 5 hero sections, 4 dashboards sections, a login page, a signup page and a marketing template.</p>
+                            <form action="/newsletter" method="post" class="relative z-10 mt-10 flex flex-wrap dark:text-white sm:flex-nowrap gap-4">
+                                <div class="w-full relative flex items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute left-5 w-5 h-5 text-gray-500 dark:text-gray-300">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+                                    </svg>
+                                    <input name="email" aria-label="your email" type="email" placeholder="Your email to get all updates" autocomplete="username" class="shadow-2xl shadow-gray-600/20 dark:shadow-blue-900/20 bg-white dark:bg-gray-900 w-full pl-14 pr-5 py-2.5 placeholder-gray-500 dark:placeholder-gray-200 rounded-full border border-gray-200 dark:border-gray-700 invalid:border-red-500">
+                                </div>
+                                <button type="submit" name="subscribe" class="relative w-full flex h-11 items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary dark:before:bg-primaryLight before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+                                    <span class="leading-3 relative text-base font-semibold text-white dark:text-gray-900">Subscribe</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
     
+                    <div class="mt-16 md:mt-0 md:w-[42%] lg:w-2/3 ml-auto">
+                        <img class="w-full" src="https://media.flaticon.com/dist/min/img/home/uicons/elements.png" alt="">
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="pt-32">
+        <div>
+          <div class="container m-auto space-y-8 px-6 text-gray-600 dark:text-gray-400 md:px-12 lg:px-20">
+            <div class="grid grid-cols-8 gap-6 md:gap-0">
+              <div class="col-span-8 border-r border-gray-100 dark:border-gray-800 md:col-span-2 lg:col-span-3">
+                <div
+                  class="flex items-center justify-between gap-6 border-b border-white dark:border-gray-800 py-6 md:block md:space-y-6 md:border-none md:py-0"
+                >
+                  <img src="images/logo.svg" alt="logo tailus" width="100" height="42" class="w-32 dark:brightness-200 dark:grayscale" />
+                  <div class="flex gap-6">
+                    <a href="#" target="blank" aria-label="github" class="hover:text-cyan-600">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-github"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                        />
+                      </svg>
+                    </a>
+                    <a href="#" target="blank" aria-label="twitter" class="hover:text-cyan-600">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-twitter"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                        />
+                      </svg>
+                    </a>
+                    <a href="#" target="blank" aria-label="medium" class="hover:text-cyan-600">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-medium"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8zm4.95 0c0 2.34-1.01 4.236-2.256 4.236-1.246 0-2.256-1.897-2.256-4.236 0-2.34 1.01-4.236 2.256-4.236 1.246 0 2.256 1.897 2.256 4.236zM16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-span-8 md:col-span-6 lg:col-span-5">
+                <div class="grid grid-cols-2 gap-6 pb-16 sm:grid-cols-3 md:pl-16">
+                  <div>
+                    <h6 class="text-lg font-medium text-gray-800 dark:text-gray-200">Company</h6>
+                    <ul class="mt-4 list-inside space-y-4">
+                      <li>
+                        <a href="#" class="transition hover:text-cyan-600">About</a>
+                      </li>
+                      <li>
+                        <a href="#" class="transition hover:text-cyan-600">Customers</a>
+                      </li>
+                      <li>
+                        <a href="#" class="transition hover:text-cyan-600">Enterprise</a>
+                      </li>
+                      <li>
+                        <a href="#" class="transition hover:text-cyan-600">Partners</a>
+                      </li>
+                      <li>
+                        <a href="#" class="transition hover:text-cyan-600">Jobs</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h6 class="text-lg font-medium text-gray-800 dark:text-gray-200">Products</h6>
+                    <ul class="mt-4 list-inside space-y-4">
+                      <li>
+                        <a href="#" class="transition hover:text-cyan-600">About</a>
+                      </li>
+                      <li>
+                        <a href="#" class="transition hover:text-cyan-600">Customers</a>
+                      </li>
+                      <li>
+                        <a href="#" class="transition hover:text-cyan-600">Enterprise</a>
+                      </li>
+                      <li>
+                        <a href="#" class="transition hover:text-cyan-600">Partners</a>
+                      </li>
+                      <li>
+                        <a href="#" class="transition hover:text-cyan-600">Jobs</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h6 class="text-lg font-medium text-gray-800 dark:text-gray-200">Ressources</h6>
+                    <ul class="mt-4 list-inside space-y-4">
+                      <li>
+                        <a href="#" class="transition hover:text-cyan-600">About</a>
+                      </li>
+                      <li>
+                        <a href="#" class="transition hover:text-cyan-600">Customers</a>
+                      </li>
+                      <li>
+                        <a href="#" class="transition hover:text-cyan-600">Enterprise</a>
+                      </li>
+                      <li>
+                        <a href="#" class="transition hover:text-cyan-600">Partners</a>
+                      </li>
+                      <li>
+                        <a href="#" class="transition hover:text-cyan-600">Jobs</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="flex justify-between border-t border-gray-100 dark:border-gray-800 py-4 pb-8 md:pl-16">
+                  <span>&copy; tailus 2003 - <span id="year"></span> </span>
+                  <span>All right reserved</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
                                     
     <script type="module" src="./app.js"></script>                         
   </body>
