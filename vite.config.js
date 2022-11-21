@@ -15,7 +15,8 @@ export default defineConfig({
         blog: resolve(__dirname, 'blog.html'),
         article: resolve(__dirname, 'blog_single.html'),
         error: resolve(__dirname, '404.html'),
-        servererror: resolve(__dirname, '500.html')
+        servererror: resolve(__dirname, '500.html'),
+        solution: resolve(__dirname, 'solution.html')
       }
     }
   }
