@@ -1,14 +1,14 @@
-<h1>Tailwind 3.1 - Vite boilerplate</h1>   
+<h1>Tailwind 3.1 - Vite boilerplate</h1>
 
 A tailwindcss v3 - Vite project starter
 
-<h2>Tools</h2> 
+<h2>Tools</h2>
 
-- Tailwindcss v3 : UI
-- Vite 2.9
-- Vanilla
-- Prettier
-- Postcss 
+-   Tailwindcss v3 : UI
+-   Vite 2.9
+-   Vanilla
+-   Prettier
+-   Postcss
 
 ## Build Setup
 
