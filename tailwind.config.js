@@ -4,12 +4,7 @@ const plugin = require("tailwindcss/plugin")
 module.exports = {
   content : ['./*.html'],
   safelist : [
-    'translate-y-1.5',
-    '-translate-y-1',
-    'rotate-45',
-    '-rotate-45',
-    '!bg-yellow-900',
-    'border-yellow-300'
+    'rotate-180'
   ],
   presets: [],
   darkMode: 'class', // or 'media' or 'class'

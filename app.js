@@ -1,5 +1,5 @@
 import "./assets/app.css";
-
+import "./src/js/faqs.js"
 
 let switchers = document.querySelectorAll(".switcher");
 
@@ -34,6 +34,8 @@ switchers.forEach((switcher) => {
     }
   });
 });
+
+
 
 let tabs = document.querySelectorAll(".tab")
 let indicator = document.querySelector(".tab-indicator")
