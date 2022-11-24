@@ -3,3 +3,4 @@
 src/samples/
 **/snippet.*
 /dist
+/node_modules
