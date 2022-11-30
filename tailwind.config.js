@@ -2,7 +2,7 @@
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
-    content: ["./*.html"],
+    content: ["./*.html", "./pages/*.html"],
     safelist: ["rotate-180", "translate-y-0", "translate-y-[100%]", "z-10", "scale-75"],
     presets: [],
     darkMode: "class", // or 'media' or 'class'
@@ -20,7 +20,6 @@ module.exports = {
             transparent: colors.transparent,
             primary: "#1565c0",
             primaryLight: "#42a5f5",
-            primaryDark: "#47126b",
             secondary: "#7161ef",
             secondaryLight: "#957fef",
             dark: "#0A101E",
