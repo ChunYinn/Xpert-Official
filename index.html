@@ -11,12 +11,10 @@
     </head>
     <body class="min-h-screen bg-white selection:bg-primary/10 selection:text-primary dark:bg-gray-900">
         <header>
-            <input type="checkbox" name="hbr" id="hbr" class="hbr peer" hidden aria-hidden="true" />
-            <nav class="navbar peer-checked:navbar-active fixed inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
+            <nav id="navbar" class="fixed inset-x-0 z-20 w-full border-b border-gray-100 bg-white/80 backdrop-blur dark:border-gray-700/30 dark:bg-gray-900/80">
                 <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                     <div class="relative flex flex-wrap items-center justify-between gap-6 lg:gap-0 lg:py-4">
-                        <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav" class="peer hidden" />
-                        <div class="peer-checked:navbar-active relative z-20 flex w-full justify-between md:px-0 lg:w-max">
+                        <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
                             <a href="/" aria-label="logo" class="flex items-center space-x-2">
                                 <svg class="h-7 w-auto" viewBox="0 0 1206 270" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_4_24)">
@@ -36,13 +34,13 @@
                                 </svg>
                             </a>
 
-                            <label role="button" for="toggle_nav" aria-label="humburger" class="hamburger relative -mr-6 p-6 lg:hidden">
-                                <div aria-hidden="true" id="line" class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"></div>
-                                <div aria-hidden="true" id="line2" class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"></div>
-                            </label>
+                            <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6 lg:hidden">
+                                <div aria-hidden="true" class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"></div>
+                                <div aria-hidden="true" class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"></div>
+                            </button>
                         </div>
-                        <label for="toggle_nav" aria-hidden="true" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 peer-checked:origin-top peer-checked:scale-y-100 dark:bg-gray-900/70 lg:hidden"></label>
-                        <div class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 peer-checked:visible peer-checked:scale-100 peer-checked:opacity-100 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0 dark:lg:bg-transparent">
+                        <div id="layer" aria-hidden="true" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 dark:bg-gray-900/70 lg:hidden"></div>
+                        <div id="navlinks" class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-auto lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0 dark:lg:bg-transparent">
                             <div class="text-gray-600 dark:text-gray-300 lg:pr-4">
                                 <ul class="space-y-6 text-base font-medium tracking-wide lg:flex lg:space-y-0 lg:text-sm">
                                     <li>
@@ -129,16 +127,16 @@
                         <div class="text-center sm:mx-auto sm:w-11/12 md:mt-12 md:w-4/5 lg:mt-0 lg:mr-auto lg:w-6/12 lg:text-left">
                             <p class="mt-12 text-lg text-gray-600 dark:text-gray-300 sm:text-xl">Computers used to be magical. But much of that magic has been lost over time, replaced by subpar tools and practices that slow teams down and hold great work back.</p>
                             <form action="" class="mt-12">
-                                <div class="relative flex items-center rounded-full border border-primary/20 bg-white p-1 px-2 shadow-md dark:border-white/10 dark:bg-dark md:p-2 lg:pr-3">
+                                <div class="relative flex items-center rounded-full border border-primary/20 bg-white p-1 px-2 shadow-md dark:border-white/10 dark:bg-dark dark:text-white focus-within:ring-2 md:p-2 lg:pr-3">
                                     <div class="py-3 pl-4 lg:pl-5">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="m-auto h-6 w-6 fill-gray-500 dark:fill-gray-400" viewBox="0 0 20 20" fill="currentColor">
                                             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                                             <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                                         </svg>
                                     </div>
-                                    <input aria-label="your email" autocomplete="email" placeholder="Your mail address" class="w-full rounded-full bg-transparent p-4 placeholder-gray-600 dark:placeholder-white" type="email" />
+                                    <input aria-label="your email" autocomplete="email" placeholder="Your mail address" class="w-full rounded-full bg-transparent p-4 placeholder-gray-600 dark:placeholder-white outline-none" type="email" />
                                     <div class="md:pr-1.5 lg:pr-0">
-                                        <button type="button" title="Start buying" class="relative ml-auto h-12 w-16 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 active:duration-75 active:before:scale-95 dark:before:bg-primaryLight sm:w-auto sm:px-6">
+                                        <button type="submit" title="Start buying" class="relative ml-auto h-12 w-16 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 active:duration-75 active:before:scale-95 dark:before:bg-primaryLight sm:w-auto sm:px-6">
                                             <span class="relative hidden w-max font-semibold text-white dark:text-gray-900 md:block"> Get Started </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative mx-auto h-6 w-6 text-white dark:text-gray-900 md:hidden">
                                                 <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
@@ -159,7 +157,7 @@
                             </div>
                         </div>
                         <div class="mt-12 w-full overflow-hidden sm:mt-20 lg:-mt-8 lg:w-6/12">
-                            <img class="w-full" src="./images/team.svg" class="w-full" alt="project illustration" height="" width="" loading="" />
+                            <img class="w-full" src="./images/team.svg" class="w-full" alt="team illustration" height="600" width="800" />
                         </div>
                     </div>
                     <div class="mt-12 border-y border-gray-100 py-8 text-center dark:border-gray-800 md:py-12 xl:mt-20">
@@ -335,7 +333,7 @@
                             <div class="space-y-6">
                                 <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">First feature</h3>
                                 <p class="text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nesciunt neque culpa hic illum ab qui error repellendus asperiores unde ut ipsam perferendis nemo fuga cum, eum consectetur, magnam doloremque!</p>
-                                <a aria-label="read more" href="#" class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
+                                <a aria-label="read more" href="#" class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative h-5 w-5 text-gray-600 transition duration-300 group-hover:translate-x-1 dark:text-white">
                                         <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
                                     </svg>
@@ -349,7 +347,7 @@
                             <div class="space-y-6">
                                 <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Second feature</h3>
                                 <p class="text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nesciunt neque culpa hic illum ab qui error repellendus asperiores unde ut ipsam perferendis nemo fuga cum, eum consectetur, magnam doloremque!</p>
-                                <a aria-label="read more" href="#" class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
+                                <a aria-label="read more" href="#" class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative h-5 w-5 text-gray-600 transition duration-300 group-hover:translate-x-1 dark:text-white">
                                         <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
                                     </svg>
@@ -363,7 +361,7 @@
                             <div class="space-y-6">
                                 <h3 class="text-2xl font-semibold text-gray-800 transition dark:text-white">Third feature</h3>
                                 <p class="text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe nesciunt neque culpa hic illum ab qui error repellendus asperiores unde ut ipsam perferendis nemo fuga cum, eum consectetur, magnam doloremque!</p>
-                                <a aria-label="read more" href="#" class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
+                                <a aria-label="read more" href="#" class="group relative mx-auto flex h-12 w-12 items-center justify-center before:absolute before:inset-0 before:rounded-full before:border before:border-gray-200 before:bg-gray-50 before:bg-gradient-to-b before:transition-transform before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 dark:before:border-gray-700 dark:before:bg-gray-800">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="relative h-5 w-5 text-gray-600 transition duration-300 group-hover:translate-x-1 dark:text-white">
                                         <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd" />
                                     </svg>
@@ -474,7 +472,7 @@
                         <div class="col-span-8 md:col-span-2 lg:col-span-3">
                             <div class="flex h-full items-center justify-between gap-6 border-b border-white py-6 dark:border-gray-800 md:flex-col md:items-start md:justify-between md:space-y-6 md:border-none md:py-0">
                                 <div>
-                                    <a href="/index.html" class="flex items-center">
+                                    <a href="/index.html" aria-label="ampire logo" class="flex items-center">
                                         <svg class="h-7 w-auto" viewBox="0 0 1206 270" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_4_24)">
                                                 <path class="fill-[#24221B] dark:fill-white" fill-rule="evenodd" clip-rule="evenodd" d="M184.589 48.5615L259.174 177.176C271.689 198.757 264.34 226.397 242.76 238.912C221.862 251.03 195.284 244.523 182.258 224.504L168.033 245.393C189.368 269.831 225.685 276.557 254.799 259.673C287.846 240.509 299.1 198.183 279.936 165.136L204.374 34.8366C201.937 30.6351 199.126 26.7859 196.008 23.3066L184.589 48.5615Z" />
@@ -521,7 +519,7 @@
                         <div class="col-span-8 md:col-span-6 lg:col-span-5">
                             <div class="grid grid-cols-2 gap-6 pb-16 sm:grid-cols-3 md:pl-16">
                                 <div>
-                                    <h6 class="text-base font-medium text-gray-800 dark:text-gray-200">Company</h6>
+                                    <h2 class="text-base font-medium text-gray-800 dark:text-gray-200">Company</h2>
                                     <ul class="mt-4 list-inside space-y-4">
                                         <li>
                                             <a href="#" class="text-sm duration-100 hover:text-primary dark:hover:text-white">About</a>
@@ -541,7 +539,7 @@
                                     </ul>
                                 </div>
                                 <div>
-                                    <h6 class="text-base font-medium text-gray-800 dark:text-gray-200">Products</h6>
+                                    <h2 class="text-base font-medium text-gray-800 dark:text-gray-200">Products</h2>
                                     <ul class="mt-4 list-inside space-y-4">
                                         <li>
                                             <a href="#" class="text-sm duration-100 hover:text-primary dark:hover:text-white">About</a>
@@ -561,7 +559,7 @@
                                     </ul>
                                 </div>
                                 <div>
-                                    <h6 class="text-base font-medium text-gray-800 dark:text-gray-200">Ressources</h6>
+                                    <h2 class="text-base font-medium text-gray-800 dark:text-gray-200">Ressources</h2>
                                     <ul class="mt-4 list-inside space-y-4">
                                         <li>
                                             <a href="#" class="text-sm duration-100 hover:text-primary dark:hover:text-white">About</a>
