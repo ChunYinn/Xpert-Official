@@ -3,9 +3,9 @@ import "./src/js/faqs.js";
 import "./src/js/theme.js";
 import "./src/js/solutions.js";
 
-const hamburger = document.querySelector('#hamburger')
-const navbar = document.querySelector('#navbar')
+const hamburger = document.querySelector("#hamburger");
+const navbar = document.querySelector("#navbar");
 
-hamburger.addEventListener('click', ()=>{
-    navbar.classList.toggle('navbar-active')
-})
+hamburger.addEventListener("click", () => {
+    navbar.classList.toggle("navbar-active");
+});
