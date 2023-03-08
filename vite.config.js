@@ -17,6 +17,8 @@ export default defineConfig({
                 error: resolve(__dirname, "/pages/404.html"),
                 servererror: resolve(__dirname, "/pages/500.html"),
                 solution: resolve(__dirname, "/pages/solution.html"),
+                privacy: resolve(__dirname, "/pages/privacy.html"),
+                licence: resolve(__dirname, "/pages/licence.html"),
             },
         },
     },
