@@ -1,5 +1,5 @@
 {
-    "name": "ampire",
+    "name": "Xpert",
     "private": true,
     "version": "1.0.0",
     "scripts": {
@@ -15,7 +15,7 @@
         "tailwindcss": "^3.2.4",
         "vite": "^3.2.3"
     },
-    "description": "ampire html template",
+    "description": "Xpert html template",
     "main": "app.js",
     "keywords": [
         "tailwindcss",
