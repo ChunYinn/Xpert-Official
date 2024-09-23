@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="ch">
     <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FNHXY7RX6V"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-FNHXY7RX6V');
+        </script>
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -60,7 +69,7 @@
             </nav>
         </header>
 
-        <section class="pt-32 sm:pt-40 md:pt-48">
+        <section id="homeSection" class="pt-32 sm:pt-40 md:pt-48">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="relative">
                     <h1 class="text-center text-4xl font-bold text-blue-900 dark:text-white sm:text-5xl lg:text-left lg:text-6xl">
@@ -92,7 +101,7 @@
                                  <strong>免費使用，前100位還享有專屬顧問導入✨</strong>
                             </p>
                             
-                            <form id="emailForm" action="https://formspree.io/f/mldrywjb" method="POST" class="mt-12">
+                            <form id="emailForm1" action="https://formspree.io/f/mldrywjb" method="POST" class="mt-12">
                                 <div class="relative flex items-center rounded-full border border-primary/20 bg-white p-1 px-2 shadow-md dark:border-white/10 dark:bg-dark md:p-2 lg:pr-3">
                                   <div class="py-3 pl-4 lg:pl-5">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="m-auto h-6 w-6 fill-gray-500 dark:fill-gray-400" viewBox="0 0 20 20" fill="currentColor">
@@ -113,7 +122,7 @@
                               </form>
                               
                               <!-- 提交後顯示的感謝訊息和卡片 -->
-                              <div id="thankYouMessage" style="display: none; margin-top: 40px;" >
+                              <div id="thankYouMessage1" style="display: none; margin-top: 40px;">
                                 <div class="rounded-3xl border border-grey-300 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
                                   <div class="space-y-12 text-center">
                                     <img src="/assets/gift.svg" class="mx-auto h-40 w-auto" width="512" height="512" alt="email illustration" />
@@ -126,6 +135,37 @@
                                   </div>
                                 </div>
                               </div>
+                              
+                              <script>
+                                document.getElementById('emailForm1').addEventListener('submit', function(event) {
+                                  event.preventDefault(); // Prevent default action
+                                  
+                                  const form = event.target;
+                                  const formData = new FormData(form);
+                                  
+                                  // Send form data via fetch
+                                  fetch(form.action, {
+                                    method: form.method,
+                                    body: formData,
+                                    headers: {
+                                      'Accept': 'application/json'
+                                    }
+                                  })
+                                  .then(response => {
+                                    if (response.ok) {
+                                      document.getElementById('thankYouMessage1').style.display = 'block';
+                                      form.reset(); // Clear form
+                                    } else {
+                                      alert('提交表單時發生錯誤，請稍後再試。');
+                                    }
+                                  })
+                                  .catch(error => {
+                                    console.error('Error:', error);
+                                    alert('發生了錯誤，請稍後再試。');
+                                  });
+                                });
+                              </script>
+                              
                         </div>
                         <div class="mt-12 w-full overflow-hidden sm:mt-20 lg:-mt-8 lg:w-6/12">
                             <img class="w-full" src="/assets/heading_graph.svg" class="w-full" alt="team illustration" height="600" width="800" />
@@ -136,7 +176,7 @@
             </div>
         </section>
 
-        <section class="mt-32">
+        <section id="SOPSection" class="mt-32">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">AI自動化你的訂單SOP</h2>
@@ -146,7 +186,7 @@
             </div>
         </section>
 
-        <section class="mt-32">
+        <section id="featureSection" class="mt-32">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">任何公司都能套用</h2>
@@ -276,7 +316,7 @@
             
         </section>
 
-        <section class="mt-32">
+        <section id="securitySection" class="mt-32">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="space-y-6 md:flex lg:items-center lg:gap-6 lg:space-y-0">
                     <div class="md:5/12 lg:w-6/12">
@@ -292,7 +332,7 @@
             </div>
         </section>
 
-        <section class="relative py-32">
+        <section id="howToSetupSection" class="relative py-32">
             <div aria-hidden="true" class="absolute inset-0 top-60 grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-30">
                 <div class="h-60 bg-gradient-to-br from-primary to-purple-400 blur-[106px] dark:from-blue-700"></div>
                 <div class="h-40 bg-gradient-to-r from-cyan-400 to-sky-300 blur-[106px] dark:to-indigo-600"></div>
@@ -337,9 +377,7 @@
             </div>
         </section>
 
-        
-
-        <section class="pb-32">
+        <section id="timeSavedSection" class="pb-32">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
               <div class="text-center">
                 <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">一個月花多少時間在處理業務溝通？</h2>
@@ -449,93 +487,91 @@
           </script>
           <script>
             // 选择所有选项卡按钮
-const tabs = document.querySelectorAll('.tab');
+            const tabs = document.querySelectorAll('.tab');
 
-// 选择所有流程步骤
-const processSteps = document.querySelectorAll('.snap-center');
+            // 选择所有流程步骤
+            const processSteps = document.querySelectorAll('.snap-center');
 
-// 定义更新流程步骤的函数
-function updateProcessSteps(activeTab) {
-    processSteps.forEach(step => {
-        const type = step.dataset.type; // 获取步骤类型：send 或 receive
-        const iconContainer = step.querySelector('.icon-container');
-        const icon = step.querySelector('.icon');
+            // 定义更新流程步骤的函数
+            function updateProcessSteps(activeTab) {
+                processSteps.forEach(step => {
+                    const type = step.dataset.type; // 获取步骤类型：send 或 receive
+                    const iconContainer = step.querySelector('.icon-container');
+                    const icon = step.querySelector('.icon');
 
-        // 移除 iconContainer 上所有以 'border-' 和 'shadow-' 开头的类名
-        let containerClassesToRemove = Array.from(iconContainer.classList).filter(cls =>
-            cls.startsWith('border-') || cls.startsWith('shadow-')
-        );
-        iconContainer.classList.remove(...containerClassesToRemove);
+                    // 移除 iconContainer 上所有以 'border-' 和 'shadow-' 开头的类名
+                    let containerClassesToRemove = Array.from(iconContainer.classList).filter(cls =>
+                        cls.startsWith('border-') || cls.startsWith('shadow-')
+                    );
+                    iconContainer.classList.remove(...containerClassesToRemove);
 
-        // 移除 icon 上所有以 'text-' 和 'dark:text-' 开头的类名
-        let iconClassesToRemove = Array.from(icon.classList).filter(cls =>
-            cls.startsWith('text-') || cls.startsWith('dark:text-')
-        );
-        icon.classList.remove(...iconClassesToRemove);
+                    // 移除 icon 上所有以 'text-' 和 'dark:text-' 开头的类名
+                    let iconClassesToRemove = Array.from(icon.classList).filter(cls =>
+                        cls.startsWith('text-') || cls.startsWith('dark:text-')
+                    );
+                    icon.classList.remove(...iconClassesToRemove);
 
-        // 根据选中的选项卡，设置新的颜色类
-        if (activeTab === 'auto-send') {
-            if (type === 'send') {
-                // 高亮“傳送”类型
-                iconContainer.classList.add('border-primary/20', 'shadow-primary/10');
-                icon.classList.add('text-primary', 'dark:text-blue-300');
-            } else {
-                // 灰色显示“接收”类型
-                iconContainer.classList.add('border-gray-300', 'shadow-gray-200');
-                icon.classList.add('text-gray-400', 'dark:text-gray-600');
+                    // 根据选中的选项卡，设置新的颜色类
+                    if (activeTab === 'auto-send') {
+                        if (type === 'send') {
+                            // 高亮“傳送”类型
+                            iconContainer.classList.add('border-primary/20', 'shadow-primary/10');
+                            icon.classList.add('text-primary', 'dark:text-blue-300');
+                        } else {
+                            // 灰色显示“接收”类型
+                            iconContainer.classList.add('border-gray-300', 'shadow-gray-200');
+                            icon.classList.add('text-gray-400', 'dark:text-gray-600');
+                        }
+                    } else if (activeTab === 'ai-receive') {
+                        if (type === 'receive') {
+                            // 高亮“接收”类型
+                            iconContainer.classList.add('border-purple-300/20', 'shadow-purple-400/10');
+                            icon.classList.add('text-purple-400', 'dark:text-purple-200');
+                        } else {
+                            // 灰色显示“傳送”类型
+                            iconContainer.classList.add('border-gray-300', 'shadow-gray-200');
+                            icon.classList.add('text-gray-400', 'dark:text-gray-600');
+                        }
+                    } else if (activeTab === 'analyze-requirements') {
+                        // 所有类型都高亮显示
+                        if (type === 'send') {
+                            iconContainer.classList.add('border-primary/20', 'shadow-primary/10');
+                            icon.classList.add('text-primary', 'dark:text-blue-300');
+                        } else if (type === 'receive') {
+                            iconContainer.classList.add('border-purple-300/20', 'shadow-purple-400/10');
+                            icon.classList.add('text-purple-400', 'dark:text-purple-200');
+                        }
+                    }
+                });
             }
-        } else if (activeTab === 'ai-receive') {
-            if (type === 'receive') {
-                // 高亮“接收”类型
-                iconContainer.classList.add('border-purple-300/20', 'shadow-purple-400/10');
-                icon.classList.add('text-purple-400', 'dark:text-purple-200');
-            } else {
-                // 灰色显示“傳送”类型
-                iconContainer.classList.add('border-gray-300', 'shadow-gray-200');
-                icon.classList.add('text-gray-400', 'dark:text-gray-600');
-            }
-        } else if (activeTab === 'analyze-requirements') {
-            // 所有类型都高亮显示
-            if (type === 'send') {
-                iconContainer.classList.add('border-primary/20', 'shadow-primary/10');
-                icon.classList.add('text-primary', 'dark:text-blue-300');
-            } else if (type === 'receive') {
-                iconContainer.classList.add('border-purple-300/20', 'shadow-purple-400/10');
-                icon.classList.add('text-purple-400', 'dark:text-purple-200');
-            }
-        }
-    });
-}
 
-// 为每个选项卡添加点击事件监听器
-tabs.forEach(tab => {
-    tab.addEventListener('click', function() {
-        const target = tab.dataset.target;
-        updateProcessSteps(target);
+            // 为每个选项卡添加点击事件监听器
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const target = tab.dataset.target;
+                    updateProcessSteps(target);
 
-        // 更新选项卡的激活状态
-        tabs.forEach(t => t.setAttribute('aria-selected', 'false'));
-        tab.setAttribute('aria-selected', 'true');
+                    // 更新选项卡的激活状态
+                    tabs.forEach(t => t.setAttribute('aria-selected', 'false'));
+                    tab.setAttribute('aria-selected', 'true');
 
-        // 显示对应的面板（如果有）
-        const panels = document.querySelectorAll('.panel');
-        panels.forEach(panel => {
-            panel.classList.add('invisible', 'opacity-0', 'scale-90');
-            panel.classList.remove('visible', 'opacity-100', 'scale-100');
-        });
-        const activePanel = document.querySelector(`#${tab.getAttribute('aria-controls')}`);
-        activePanel.classList.remove('invisible', 'opacity-0', 'scale-90');
-        activePanel.classList.add('visible', 'opacity-100', 'scale-100');
-    });
-});
+                    // 显示对应的面板（如果有）
+                    const panels = document.querySelectorAll('.panel');
+                    panels.forEach(panel => {
+                        panel.classList.add('invisible', 'opacity-0', 'scale-90');
+                        panel.classList.remove('visible', 'opacity-100', 'scale-100');
+                    });
+                    const activePanel = document.querySelector(`#${tab.getAttribute('aria-controls')}`);
+                    activePanel.classList.remove('invisible', 'opacity-0', 'scale-90');
+                    activePanel.classList.add('visible', 'opacity-100', 'scale-100');
+                });
+            });
 
-// 初始状态，设置为“自動傳送”
-updateProcessSteps('auto-send');
+            // 初始状态，设置为“自動傳送”
+            updateProcessSteps('auto-send');
 
           </script>
           
-
-
 
         <section id="joinUs" class="relative before:absolute before:inset-0 before:h-px before:w-96 before:bg-gradient-to-r before:from-yellow-300 before:via-pink-400 before:to-transparent after:absolute after:inset-0 after:ml-auto after:mt-auto after:h-px after:w-96 after:bg-gradient-to-l after:from-yellow-300 after:via-pink-400 after:to-transparent">
             <div class="border-y border-gray-200 bg-gray-100 dark:border-gray-700 dark:bg-darker">
@@ -554,7 +590,7 @@ updateProcessSteps('auto-send');
                                     <br>
                                     <strong>前100位享有免費顧問導入✨</strong>
                                   </p>
-                                  <form id="emailForm" action="https://formspree.io/f/mldrywjb" method="POST" class="mt-12">
+                                  <form id="emailForm2" action="https://formspree.io/f/mldrywjb" method="POST" class="mt-12">
                                     <div class="relative flex items-center rounded-full border border-primary/20 bg-white p-1 px-2 shadow-md dark:border-white/10 dark:bg-dark md:p-2 lg:pr-3">
                                       <div class="py-3 pl-4 lg:pl-5">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="m-auto h-6 w-6 fill-gray-500 dark:fill-gray-400" viewBox="0 0 20 20" fill="currentColor">
@@ -575,7 +611,7 @@ updateProcessSteps('auto-send');
                                   </form>
                                   
                                   <!-- 提交後顯示的感謝訊息和卡片 -->
-                                  <div id="thankYouMessage" style="display: none; margin-top: 40px;" >
+                                  <div id="thankYouMessage2" style="display: none; margin-top: 40px;">
                                     <div class="rounded-3xl border border-grey-300 bg-white p-8 py-12 shadow-2xl shadow-gray-600/10 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none sm:p-12">
                                       <div class="space-y-12 text-center">
                                         <img src="/assets/gift.svg" class="mx-auto h-40 w-auto" width="512" height="512" alt="email illustration" />
@@ -590,13 +626,13 @@ updateProcessSteps('auto-send');
                                   </div>
                                   
                                   <script>
-                                    document.getElementById('emailForm').addEventListener('submit', function(event) {
-                                      event.preventDefault(); // Prevent default only to allow fetch
-                                  
+                                    document.getElementById('emailForm2').addEventListener('submit', function(event) {
+                                      event.preventDefault(); // Prevent default action
+                                      
                                       const form = event.target;
                                       const formData = new FormData(form);
-                                  
-                                      // Use fetch to send form data to Formspree
+                                      
+                                      // Send form data via fetch
                                       fetch(form.action, {
                                         method: form.method,
                                         body: formData,
@@ -606,8 +642,7 @@ updateProcessSteps('auto-send');
                                       })
                                       .then(response => {
                                         if (response.ok) {
-                                          // If the form submission is successful, show thank you message
-                                          document.getElementById('thankYouMessage').style.display = 'block';
+                                          document.getElementById('thankYouMessage2').style.display = 'block';
                                           form.reset(); // Clear form
                                         } else {
                                           alert('提交表單時發生錯誤，請稍後再試。');
@@ -618,7 +653,7 @@ updateProcessSteps('auto-send');
                                         alert('發生了錯誤，請稍後再試。');
                                       });
                                     });
-                                  </script>                                  
+                                  </script>                   
                                   
                                   
                                   
@@ -658,5 +693,46 @@ updateProcessSteps('auto-send');
         
 
         <script type="module" src="./app.js"></script>
+        <script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+              const sections = document.querySelectorAll('section');
+              let currentSection = null;
+              let sectionStartTime = null;
+          
+              const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                  if (entry.isIntersecting) {
+                    if (currentSection) {
+                      const timeSpent = new Date() - sectionStartTime;
+                      gtag('event', 'section_time_spent', {
+                        'event_category': 'Engagement',
+                        'event_label': currentSection.id,
+                        'value': timeSpent
+                      });
+                    }
+                    currentSection = entry.target;
+                    sectionStartTime = new Date();
+                    gtag('event', 'section_view', {
+                      'event_category': 'Section',
+                      'event_label': currentSection.id
+                    });
+                  }
+                });
+              }, { threshold: 0.5 });
+          
+              sections.forEach(section => observer.observe(section));
+          
+              // Drop-Off Tracking
+              window.addEventListener('beforeunload', () => {
+                if (currentSection) {
+                  gtag('event', 'section_dropout', {
+                    'event_category': 'Dropout',
+                    'event_label': currentSection.id
+                  });
+                }
+              });
+            });
+          </script>
+          
     </body>
 </html>
