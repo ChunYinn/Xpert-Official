@@ -1,29 +1,13 @@
+// Ensure the document always uses the light theme
+document.documentElement.classList.remove("dark");
+
+// Clear any stored theme preference from localStorage to prevent interference
+localStorage.removeItem("color-theme");
+
+// Get all switchers (if necessary, you can disable them)
 let switchers = document.querySelectorAll(".switcher");
 
-if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-    document.documentElement.classList.add("dark");
-} else {
-    document.documentElement.classList.remove("dark");
-}
-
+// Optionally, disable the switchers so users cannot interact with them (optional step)
 switchers.forEach((switcher) => {
-    switcher.addEventListener("click", function () {
-        if (localStorage.getItem("color-theme")) {
-            if (localStorage.getItem("color-theme") === "light") {
-                document.documentElement.classList.add("dark");
-                localStorage.setItem("color-theme", "dark");
-            } else {
-                document.documentElement.classList.remove("dark");
-                localStorage.setItem("color-theme", "light");
-            }
-        } else {
-            if (document.documentElement.classList.contains("dark")) {
-                document.documentElement.classList.remove("dark");
-                localStorage.setItem("color-theme", "light");
-            } else {
-                document.documentElement.classList.add("dark");
-                localStorage.setItem("color-theme", "dark");
-            }
-        }
-    });
+    switcher.setAttribute("disabled", "true"); // This makes the switchers non-functional
 });
