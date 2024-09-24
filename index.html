@@ -167,9 +167,10 @@
                               </script>
                               
                         </div>
-                        <div class="mt-12 w-full overflow-hidden sm:mt-20 lg:-mt-8 lg:w-6/12">
-                            <img class="w-full" src="/assets/heading_graph.svg" class="w-full" alt="team illustration" height="600" width="800" />
-                        </div>
+                        <div class="sm:block mt-12 w-full overflow-hidden sm:mt-20 lg:-mt-8 lg:w-6/12">
+                            <img class="w-full" src="/assets/heading_graph.svg" alt="team illustration" height="600" width="800" />
+                          </div>
+                          
                     </div>
                     
                 </div>
@@ -179,19 +180,36 @@
         <section id="SOPSection" class="mt-32">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="text-center">
-                    <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">AI自動化你的訂單SOP</h2>
-                    <p class="mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5">跟客戶溝通再到處理訂單再簡單不過了！傳送、接收都讓AI來做</p>  
-                    <img class="w-full" src="/assets/SOP Roadmap.svg" class="w-full" alt="team illustration" height="600" width="800" />
-                </div>                
+                    <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">
+                        AI自動化你的訂單SOP
+                    </h2>
+                    <p class="mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5">
+                        跟客戶溝通再到處理訂單再簡單不過了！傳送、接收都讓AI來做
+                    </p>
+                    <!-- Scrolling container -->
+                    <div id="horizontal-scroll" class="relative overflow-hidden">
+                        <img
+                            src="/assets/SOP Roadmap.svg"
+                            alt="team illustration"
+                            class="block"
+                            style="min-width: 800px;"
+                        />
+                    </div>
+                </div>
             </div>
         </section>
+        
+        
+        
 
         <section id="featureSection" class="mt-32">
             <div class="mx-auto px-4 sm:px-12 xl:max-w-6xl xl:px-0">
                 <div class="text-center">
                     <h2 class="text-3xl font-bold text-gray-800 dark:text-white md:text-4xl xl:text-5xl">任何公司都能套用</h2>
-                    <p class="mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5">透過 Xpert 串接不同的客戶溝通工具，整合管理所有業務流程，並利用數據提升銷售轉換率，創造更多業務價值。自動接收分類傳真、自動發送報價單，收到訂單後即時更新 Excel 的訂單表。</p>
-
+                    <p class="hidden md:block mx-auto mt-6 text-gray-700 dark:text-gray-300 md:w-3/4 lg:w-3/5">
+                        透過 Xpert 串接不同的客戶溝通工具，整合管理所有業務流程，並利用數據提升銷售轉換率，創造更多業務價值。自動接收分類傳真、自動發送報價單，收到訂單後即時更新 Excel 的訂單表。
+                      </p>
+                      
                     <div role="tablist" aria-label="tabs" class="relative mx-auto mt-12 grid h-12 w-auto grid-cols-3 items-center gap-x-1 overflow-hidden rounded-full border border-gray-200 bg-gray-100 px-[3px] text-gray-600 dark:border-gray-700 dark:border-opacity-60 dark:bg-darker dark:text-gray-300 dark:shadow-none sm:w-max">
                         <div class="tab-indicator absolute h-10 rounded-full bg-white shadow-md transition-[left] duration-500 dark:bg-gray-800" style="left: 4px"></div>
                         <button role="tab" data-target="auto-send" aria-selected="true" aria-controls="panel-0" tabindex="0" title="tab item" class="tab relative block rounded-full py-2.5 px-4 hover:text-primary dark:hover:text-primaryLight">
@@ -293,7 +311,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="-m-4 overflow-hidden p-4 sm:-mx-12 sm:px-12 md:mx-0 md:w-1/2 md:overflow-visible md:px-0">
+                        <!-- Assume you have buttons or tabs that control which panel is active -->
+                        <div class="-m-4 overflow-hidden p-4 sm:-mx-6 sm:px-6 md:mx-0 md:w-1/2 md:overflow-visible md:px-0">
                             <div class="relative bg-gray-100 before:absolute before:inset-0 before:scale-x-110 before:border-y before:border-gray-200 after:absolute after:inset-0 after:scale-y-110 after:border-x after:border-gray-200 dark:bg-gray-800 dark:before:border-gray-700 dark:after:border-gray-700">
                                 <div class="relative h-96 overflow-clip py-10 sm:h-[32rem] lg:p-20">
                                     <div data-target="panel-0" class="panel-preview absolute inset-0 z-10 flex translate-y-0 scale-100 items-end overflow-hidden px-6 opacity-100 transition duration-500 sm:px-10">
@@ -308,6 +327,10 @@
                                 </div>
                             </div>
                         </div>
+
+
+                        
+                        
                     </div>
                     
                 </div>
@@ -693,6 +716,7 @@
         
 
         <script type="module" src="./app.js"></script>
+
         <script>
             window.addEventListener('DOMContentLoaded', (event) => {
               const sections = document.querySelectorAll('section');
@@ -732,7 +756,145 @@
                 }
               });
             });
-          </script>
+        </script>
+
+        <!-- Scrolling to the left -->
+        <script>
+            (function() {
+                const container = document.getElementById('horizontal-scroll');
+        
+                // Detect if the device is a touch device (mobile)
+                const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+        
+                if (isTouchDevice) {
+                    // Mobile touch devices
+                    let startX = 0;
+                    let scrollLeft = 0;
+        
+                    container.addEventListener('touchstart', (e) => {
+                        startX = e.touches[0].pageY;
+                        scrollLeft = container.scrollLeft;
+                    });
+        
+                    container.addEventListener('touchmove', (e) => {
+                        const x = e.touches[0].pageY;
+                        const walk = startX - x;
+                        container.scrollLeft = scrollLeft + walk;
+        
+                        // Prevent vertical scrolling if horizontal scroll is possible
+                        if (
+                            (container.scrollLeft < container.scrollWidth - container.clientWidth && walk > 0) ||
+                            (container.scrollLeft > 0 && walk < 0)
+                        ) {
+                            e.preventDefault();
+                        }
+                    }, { passive: false });
+                }
+                // Remove else block to ensure desktop devices scroll normally
+            })();
+        </script>
+        
+
+
+        <style>
+            @media (max-width: 768px) {
+                #homeSection img {
+                    width: 80%; /* Adjust the width for smaller screens */
+                    height: auto; /* Keep the aspect ratio */
+                    max-width: 300px; /* Maximum width to ensure it doesn’t take up too much space */
+                    margin: 0 auto; /* Center the image */
+                }
+                #horizontal-scroll {
+                    overflow-x: auto;
+                    overflow-y: hidden;
+                    max-height: 100vh;
+                }
+
+                #horizontal-scroll::-webkit-scrollbar {
+                    display: none;
+                }
+                #howToSetupSection .p-8, .py-12 {
+                    padding: 16px; /* Increase padding for better alignment */
+                    margin: 0 auto; /* Center the items */
+                }
+
+
+                #howToSetupSection h3 {
+                    font-size: 1.2rem; /* Reduce step title size */
+                }
+
+                #howToSetupSection p {
+                    font-size: 0.9rem; /* Reduce text size */
+                }
+
+                /* Adjust grid layout */
+                #howToSetupSection .grid {
+                    grid-template-columns: 1fr; /* Single column on mobile */
+                    gap: 8px; /* Reduce space between elements */
+                }
+
+                /* Adjust image size */
+                #howToSetupSection img {
+                    width: 50px; /* Reduce image size */
+                    height: auto;
+                }
+                #howToSetupSection .rounded-3xl {
+                    width: 90%; /* Make sure items are not too close to the edges */
+                }
+
+                /* Reduce padding for the section */
+                #timeSavedSection .pb-32 {
+                    padding-bottom: 16px; /* Reduce bottom padding */
+                }
+
+                /* Adjust spacing for inner sections */
+                #timeSavedSection .pt-32, .sm\:pt-10, .md\:pt-20, .lg\:pt-20 {
+                    padding-top: 10px; /* Reduce top padding for better alignment */
+                }
+
+                /* Adjust text margins */
+                #timeSavedSection h2 {
+                    margin-bottom: 10px; /* Reduce margin below the heading */
+                }
+
+                #timeSavedSection p {
+                    margin-bottom: 6px; /* Reduce the paragraph margin */
+                }
+
+                /* Reduce space between sections */
+                .rounded-3xl {
+                    margin-bottom: 8px; /* Make sure sections are spaced properly */
+                }
+
+                /* Adjust the padding for the interactive elements */
+                .rounded-3xl .p-8, .py-12 {
+                    padding: 10px; /* Make inner content padding smaller */
+                }
+
+                /* Center elements and adjust image size */
+                .text-center {
+                    margin-bottom: 10px; /* Tighten space between blocks */
+                }
+
+                .m-auto.h-16 {
+                    width: 50px; /* Resize the image */
+                    margin-bottom: 8px; /* Add a bit of space below image */
+                }
+
+                /* Adjust the range slider elements */
+                .w-full.mt-2 {
+                    margin-top: 5px; /* Decrease top margin for range inputs */
+                }
+
+                /* Ensure everything fits well on mobile */
+                .block {
+                    padding: 4px 0; /* Reduce padding around block elements */
+                }
+
+                }
+
+        </style>
+        
           
     </body>
 </html>
